@@ -69,6 +69,10 @@ ul {
     color: var(--primaryColor);
 }
 
+.swiper {
+    cursor: pointer;
+}
+
 /* End Global Rules */
 /* Start Component */
 .head {
@@ -160,9 +164,10 @@ ul {
         flex-direction: column;
         align-items: start;
         background-color: white;
-        padding: 10px 20px;
+        padding: 10px 20px 62px;
         display: none;
         right: 22px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }
 
@@ -447,26 +452,26 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-column-gap: 40px;
     grid-template-areas: "right left";
-    align-items: center;
+    align-items: start;
     margin-bottom: 100px;
     position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .about .container:nth-child(odd) {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .about .container:nth-child(even) {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .about .custom {
-        margin-bottom: 300px;
+        margin-bottom: 400px;
     }
 }
 
@@ -509,8 +514,15 @@ ul {
 @media (min-width: 768px) and (max-width: 991px) {
     .about .about-right .p-custom {
         position: absolute;
-        right: 0;
         line-height: 35px;
+    }
+
+    .about .about-right .p-custom.one {
+        right: -109%;
+    }
+
+    .about .about-right .p-custom.two {
+        left: -109%;
     }
 }
 
@@ -581,6 +593,10 @@ ul {
 }
 /* End About */
 /* Start Features */
+.features {
+    padding-top: 80px;
+}
+
 .features .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -736,6 +752,15 @@ ul {
     fill: white !important;
     border-radius: 5px;
     padding: 13px 20px;
+}
+
+.services .swiper .service-icons .icon-wrapper.active svg path {
+    fill: white;
+}
+
+
+.services .swiper .service-icons .icon-wrapper svg path {
+    fill: white;
 }
 
 .swiper-button-next,

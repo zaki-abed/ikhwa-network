@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +33,10 @@
     <!-- AOS Animation (CDN) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- ملف CSS الإضافي للغات LTR -->
+    @if(app()->getLocale() === 'en' || app()->getLocale() === 'fr')
+        <link rel="stylesheet" href="{{ asset('assets/css/site/style-ltr.css') }}">
+    @endif
 </head>
 <body>
     @include('partials.site.header')
@@ -70,10 +74,8 @@
     <script>
     // {{-- Button: Up to top --}}
     document.addEventListener("DOMContentLoaded", function () {
-        // الزر
         const scrollToTopBtn = document.getElementById('scrollToTop');
 
-        // تابع التمرير لإظهار/إخفاء الزر
         window.addEventListener('scroll', () => {
             if (window.scrollY > 200) {
                 scrollToTopBtn.classList.add('show');
@@ -86,7 +88,7 @@
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth' // تمرير سلس
+                behavior: 'smooth'
             });
         });
     });

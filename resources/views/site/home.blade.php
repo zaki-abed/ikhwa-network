@@ -3,51 +3,42 @@
 @section('title', 'Home Page')
 
 @section('content')
-<h1>{{ __('messages.welcome') }}</h1>
-<a href="#">{{ __('messages.contact') }}</a>
 
-    <!-- Start Landing -->
-    <div class="landing" data-aos="fade-up" data-aos-duration="1100">
-    <!-- Slider main container -->
-    <div class="swiper mySwiper">
-        <!-- Wrapper required for slides -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="overlay"></div>
-                <h2>طـــموح <span>بآفــــاق</span> لا نهــائية</h2>
-                <img src="{{ asset('assets/images/site/landing/1.jpeg') }}" alt="Landing">
+    {{-- Start Landing --}}
+    <div class="landing">
+        <div class="swiper landingSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="overlay"></div>
+                    <h2>{!! __('site.Home_page.landing_section.slide_1') !!}</h2>
+                    <img src="{{ asset('assets/images/site/landing/1.jpeg') }}" alt="Landing">
+                </div>
+                <div class="swiper-slide">
+                    <div class="overlay"></div>
+                    <h2>{!! __('site.Home_page.landing_section.slide_2') !!}</h2>
+                    <img src="{{ asset('assets/images/site/landing/2.jpeg') }}" alt="Landing">
+                </div>
+                <div class="swiper-slide">
+                    <div class="overlay"></div>
+                    <h2>{!! __('site.Home_page.landing_section.slide_3') !!}</h2>
+                    <img src="{{ asset('assets/images/site/landing/3.jpeg') }}" alt="Landing">
+                </div>
+                <div class="swiper-slide">
+                    <div class="overlay"></div>
+                    <h2>{!! __('site.Home_page.landing_section.slide_4') !!}</h2>
+                    <img src="{{ asset('assets/images/site/landing/4.jpeg') }}" alt="Landing">
+                </div>
+                <div class="swiper-slide">
+                    <div class="overlay"></div>
+                    <h2>{!! __('site.Home_page.landing_section.slide_5') !!}</h2>
+                    <img src="{{ asset('assets/images/site/landing/5.jpeg') }}" alt="Landing">
+                </div>
             </div>
-            <div class="swiper-slide">
-                <div class="overlay"></div>
-                <h2>إحــــترف <span>بخـــبـــرات</span> لا نهـــائية</h2>
-                <img src="{{ asset('assets/images/site/landing/2.jpeg') }}" alt="Landing">
-            </div>
-            <div class="swiper-slide">
-                <div class="overlay"></div>
-                <h2>نــحن هُـنا لتحقــيق <span>مُتطلــباتك</span> وتقــديم الأفـضل لك</h2>
-                <img src="{{ asset('assets/images/site/landing/3.jpeg') }}" alt="Landing">
-            </div>
-            <div class="swiper-slide">
-                <div class="overlay"></div>
-                <h2>مــع <span>إخــوة</span> أنــتم مـنا ونَــحن مِنــكم</h2>
-                <img src="{{ asset('assets/images/site/landing/4.jpeg') }}" alt="Landing">
-            </div>
-            <div class="swiper-slide">
-                <div class="overlay"></div>
-                <h2><span>الشراكة</span> هي مفتاح النجاح والتكامل <br>والاستقرار في السوق </h2>
-                <img src="{{ asset('assets/images/site/landing/5.jpeg') }}" alt="Landing">
-            </div>
+
+            <div class="swiper-pagination"></div>
         </div>
-
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
-    </div>
-    <!-- End Landing -->
+    {{-- End Landing --}}
 
     <!-- Start About Us -->
     <section class="about">
@@ -73,7 +64,7 @@
                     <br>
                     منذ انطلاقتنا في شبكة إخوة انتهجنا سياسات وإجراءات ترتكز على خبرات عملية وميدانية في تقديم الخدمات العقارية وتسخير كوادرنا المهنية لتقديم أفضل الخدمات والمُنتجات العقارية التي تجعل زبائننا يحصلون على أفضل العوائد الاستثمارية. فنحن في شبكة إخوة نستشعر مسؤوليتنا أمام وطننا الغالي وأمام زبائن شركتنا وحتى نكون في مُستوى مرموق، فقد أدركنا أن واجبنا يُحتم علينا العمل المستمر لتعزيز مكانة الشركة من خلال توفير منتج عالي الجودة بما يُعزز المردود الاقتصادي لجميع الأطراف ذات العلاقة، وكذلك التركيز على تعزيز كوادرنا باعتبارها أثمن الموارد وأهمها.
                     <br>
-                    <p class="p-custom">
+                    <p class="p-custom one">
                         فنحن نسعى دائماً للمزيد من النمو و التطوير عبر تحديد أهدافنا و العمل على تحقيقها من خلال وضع معايير جديدة في عالم التطوير العقاري والتأجير وإدارة المشاريع حيث أن التخطيط السليم للمستقبل هو مفتاح النجاح. ففي "شبكة إخوة"، نعتبر أن إدارة الأعمال هي فن بحد ذاته، والفن يبتكر الثقافة، والتي بدورها تحدد ماهية القيم التي ترسم مستقبلاً مضموناً، وهذا ما يؤكد أننا نضع المستقبل والآفاق الجديدة نصب أعيننا.
                         وفي الختام لابد أن أتقدم بجزيل الشكر لزبائننا الأعزاء وللسادة المساهمين وأعضاء مجلس إدارة شركتنا على دعمهم اللامحدود وثقتهم الدائمة، والشكر موصول إلى كافة فرق العمل التنفيذية على تفانيهم وجهودهم في تنفيذ المهام بكل كفاءة وتميز، والتزامهم بالخطط الاستراتيجية الموضوعة لتحقيق أهداف وتطلعات الجميع.
                          محمد سعد الراجي
@@ -127,9 +118,10 @@
                 <h2 class="about-title">قصة الشركة في أسطر:</h2>
                 <p class="about-description">
                     اعتمد الأعضاء المؤسسين، استراتيجية التطوير المستمر منذ البدايات الأولى للنشاط المهني في المجال التقني ليصبحوا من البارزين في المجال. وبرؤية رجال الأعمال الناجحين الطموحين. امتد النشاط إلى قطاع التطوير العقاري مُستثمرين الخبرات المعرفية والتقنية في توفير مُنتج عقاري مُتميز.
-                    <br>
-                    ومع تطور أعمال ومشاريع المُساهمين تم تأسيس شبكة إخوة "IKHWA NETWORK" سنة 2023 كشركة ذات مسؤولية محدودة بِمُوجب سجل تجاري رقم 59287 لِتصبح إحدى الشركات الناشطة في المجال العقاري بالمملكة المغربية، التي تُقدم باقة من الحلول والخدمات الاحترافية المتكاملة في الشراء والتأجير واستثمار الأراضي والعقارات وتطوير وإدارة وتشغيل وصيانة المباني السكنية والتجارية، وفقا لأعلى معايير الجودة والأمان والكفاءة المعمول بها عالميا في هذا المجال.
-                    <p class="p-custom">
+                    <p class="p-custom two">
+                        ومع تطور أعمال ومشاريع المُساهمين تم تأسيس شبكة إخوة "IKHWA NETWORK" سنة 2023 كشركة ذات مسؤولية محدودة بِمُوجب سجل تجاري رقم 59287 لِتصبح إحدى الشركات الناشطة في المجال العقاري بالمملكة المغربية، التي تُقدم باقة من الحلول والخدمات الاحترافية المتكاملة في الشراء والتأجير واستثمار الأراضي والعقارات وتطوير وإدارة وتشغيل وصيانة المباني السكنية والتجارية، وفقا لأعلى معايير الجودة والأمان والكفاءة المعمول بها عالميا في هذا المجال.
+                        <br>
+                        <br>
                         تعمل شبكة إخوة على تطبيق أفضل المُمارسات المهنية في إدارة مشاريعها. من خلال الكوادر الإدارية والخدمية الماهرة، وتعظيم نقاط القوة فيها وتحويل التحديات إلى فرص تطوير حقيقية تؤدي إلى مزيد من النمو والازدهار، كل ذلك وفق بنية تنظيمية متقنة بالتزام معايير حوكمة الشركات المتكاملة. وخلق بيئة عمل احترافية متطورة، كما أن الشركة تمنح جميع منسوبيها فرصة التطوير والتدريب وصقل المواهب والمهارات، وتعزيز مفهوم العمل بروح الفريق الواحد، وتكريس القيم المهنية المُتميزة في جميع قنوات العمل في الشركة.
                     </p>
                 </p>
@@ -549,7 +541,23 @@
 
 @push('scripts')
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+const landingSwiper = new Swiper('.landingSwiper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+    document.addEventListener("DOMContentLoaded", function () {
     // Initialize Swiper
     const swiper = new Swiper('.mySwiper', {
         loop: true,
@@ -572,26 +580,23 @@
 
     // Function to handle slide events and update active class
     function handleSlideEvent(index) {
-        // Remove active class from all icon-boxes and paths
-        iconBoxes.forEach((box, i) => {
-            const path = box.querySelector('.icon-wrapper path');
-            const iconWrapper = box.querySelector('.icon-wrapper');
+    // Remove active class from all icon-boxes and paths
+    iconBoxes.forEach((box, i) => {
+        const iconWrapper = box.querySelector('.icon-wrapper');
 
-            // Remove active class from path and icon-box
-            if (path) path.classList.remove('active');
-            if (iconWrapper) iconWrapper.classList.remove('active');
-        });
+        // Remove active class from icon-wrapper
+        if (iconWrapper) iconWrapper.classList.remove('active');
+    });
 
-        // Add active class to the corresponding icon-box and path
-        const activeBox = iconBoxes[index];
-        if (activeBox) {
-            const activePath = activeBox.querySelector('.icon-wrapper path');
-            const activeWrapper = activeBox.querySelector('.icon-wrapper');
+    // Add active class to the corresponding icon-box
+    const activeBox = iconBoxes[index];
+    if (activeBox) {
+        const activeWrapper = activeBox.querySelector('.icon-wrapper');
 
-            if (activePath) activePath.classList.add('active');
-            if (activeWrapper) activeWrapper.classList.add('active');
-        }
+        if (activeWrapper) activeWrapper.classList.add('active');
     }
+}
+
 
     // Listen for slide changes and call the function for each slide
     swiper.on('slideChange', function () {

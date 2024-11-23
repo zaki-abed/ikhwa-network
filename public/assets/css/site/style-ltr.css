@@ -1,0 +1,83 @@
+body {
+    direction: ltr;
+}
+
+/* Header */
+.header .dropdown-content ul li a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 9px;
+}
+
+.header .btn-show-nav {
+    left: auto;
+    right: 25px;
+}
+
+.header .lang-menu .dropdown-content {
+    left: -21px;
+}
+
+.landing .swiper .swiper-slide h2 {
+    left: 90px;
+    right: auto;
+}
+
+.about .about-right .p-custom.one {
+    left: -109%;
+    right: auto;
+}
+
+.about .about-right .p-custom.one {
+    left: -109%;
+    right: auto;
+}
+
+.about ul {
+    padding-left: 20px;
+}
+
+.about ul li::before {
+    left: -17px;
+}
+
+.about .about-right .p-custom.two {
+    right: -109%;
+    left: auto;
+}
+
+.services .service-content .service-list {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.services .service-content .service-list li::before {
+    left: -18px;
+    right: auto;
+}
+
+
+.features .feature-box {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.faq .accordion .accordion-item .accordion-button::after {
+    right: 30px;
+    left: auto;
+}
+
+.contact .container .info-section p i {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.contact .container .form-section form .file-upload .file-label .label-text {
+    margin-right: 10px;
+}
+
+footer .footer-links ul {
+    text-align: left;
+}

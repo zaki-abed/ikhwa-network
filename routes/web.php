@@ -12,12 +12,17 @@ use App\Http\Controllers\Admin\AdminController;
 |
 */
 
-Route::group(['prefix' => 'site', 'as' => 'site.'], function () {
+Route::get('/', function () {
+    return redirect('/ar/site');
+});
+
+
+Route::group(['prefix' => '{locale}/site', 'as' => 'site.'], function () {
     Route::get('/', [SiteController::class, 'home'])->name('home');
     Route::get('/about', [SiteController::class, 'about'])->name('about');
     Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
     Route::get('/services', [SiteController::class, 'services'])->name('services');
-    Route::get('/faq', [SiteController::class, 'faq'])->name('faq');
+    Route::get('/partners', [SiteController::class, 'partners'])->name('partners');
 });
 
 
