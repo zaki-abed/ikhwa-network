@@ -36,3 +36,4 @@ Route::group(['prefix' => 'site', 'as' => 'site.'], function () {
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 });
+

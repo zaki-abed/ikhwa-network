@@ -3,67 +3,70 @@
 @section('title', 'Home Page')
 
 @section('content')
-      <!-- Start Landing -->
-      <div class="landing">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Wrapper required for slides -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="overlay"></div>
-                    <h2>طـــموح <span>بآفــــاق</span> لا نهــائية</h2>
-                    <img src="{{ asset('assets/images/site/landing/1.jpeg') }}" alt="Landing">
-                </div>
-                <div class="swiper-slide">
-                    <div class="overlay"></div>
-                    <h2>إحــــترف <span>بخـــبـــرات</span> لا نهـــائية</h2>
-                    <img src="{{ asset('assets/images/site/landing/2.jpeg') }}" alt="Landing">
-                </div>
-                <div class="swiper-slide">
-                    <div class="overlay"></div>
-                    <h2>نــحن هُـنا لتحقــيق <span>مُتطلــباتك</span> وتقــديم الأفـضل لك</h2>
-                    <img src="{{ asset('assets/images/site/landing/3.jpeg') }}" alt="Landing">
-                </div>
-                <div class="swiper-slide">
-                    <div class="overlay"></div>
-                    <h2>مــع إخــوة أنــتم مـنا ونَــحن مِنــكم</h2>
-                    <img src="{{ asset('assets/images/site/landing/4.jpeg') }}" alt="Landing">
-                </div>
-                <div class="swiper-slide">
-                    <div class="overlay"></div>
-                    <h2><span>الشراكة</span> هي مفتاح النجاح والتكامل <br>والاستقرار في السوق </h2>
-                    <img src="{{ asset('assets/images/site/landing/5.jpeg') }}" alt="Landing">
-                </div>
+<h1>{{ __('messages.welcome') }}</h1>
+<a href="#">{{ __('messages.contact') }}</a>
+
+    <!-- Start Landing -->
+    <div class="landing" data-aos="fade-up" data-aos-duration="1100">
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+        <!-- Wrapper required for slides -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="overlay"></div>
+                <h2>طـــموح <span>بآفــــاق</span> لا نهــائية</h2>
+                <img src="{{ asset('assets/images/site/landing/1.jpeg') }}" alt="Landing">
             </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-slide">
+                <div class="overlay"></div>
+                <h2>إحــــترف <span>بخـــبـــرات</span> لا نهـــائية</h2>
+                <img src="{{ asset('assets/images/site/landing/2.jpeg') }}" alt="Landing">
+            </div>
+            <div class="swiper-slide">
+                <div class="overlay"></div>
+                <h2>نــحن هُـنا لتحقــيق <span>مُتطلــباتك</span> وتقــديم الأفـضل لك</h2>
+                <img src="{{ asset('assets/images/site/landing/3.jpeg') }}" alt="Landing">
+            </div>
+            <div class="swiper-slide">
+                <div class="overlay"></div>
+                <h2>مــع <span>إخــوة</span> أنــتم مـنا ونَــحن مِنــكم</h2>
+                <img src="{{ asset('assets/images/site/landing/4.jpeg') }}" alt="Landing">
+            </div>
+            <div class="swiper-slide">
+                <div class="overlay"></div>
+                <h2><span>الشراكة</span> هي مفتاح النجاح والتكامل <br>والاستقرار في السوق </h2>
+                <img src="{{ asset('assets/images/site/landing/5.jpeg') }}" alt="Landing">
+            </div>
         </div>
-    </div>
 
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    </div>
     <!-- End Landing -->
+
     <!-- Start About Us -->
     <section class="about">
         <div class="container">
             <!-- Right Side: Text Content -->
-            <div class="about-right">
+            <div class="about-right" data-aos="zoom-in" data-aos-duration="1100">
                 <h2 class="about-title">تعرف على شركتنا:</h2>
                 <p class="about-description">
                     شبكة إخوة هي من إحدى الشركات التي تنشط بالمجال العقاري في السوق المحلي حيث تأسست 2023 لتبدأ رحلتها من الضفة الإٍسماعيلية مكاسب بدين تقديم خدمات عقارية عالية الجودة بما يلبي حاجة الزبائن ويحقق أهداف المستثمرين. ولتؤكد دائماً على تعزيز العلاقات وإقامة شراكات استراتيجية مع المؤسسات التجارية الفاعلة بالمجتمع.
                 </p>
             </div>
                 <!-- Left Side: Logo and Vertical Text -->
-            <div class="about-left">
+            <div class="about-left" data-aos="zoom-in" data-aos-duration="1100">
                 <img src="{{ asset('assets/images/site/about/1.jpeg') }}" alt="Logo" class="about-logo">
             </div>
         </div>
         <div class="container row2 custom">
             <!-- Right Side: Text Content -->
-            <div class="about-right">
+            <div class="about-right" data-aos="zoom-in" data-aos-duration="1100">
                 <h2 class="about-title">رسالة الرئيس التنفيذي للشركة :</h2>
                 <p class="about-description">
                     من دواعي سروري أن أرحب بكم في شبكة إخوة (IKHWA NETWORK SARL)، الشركة المغربية المُتخصصة في مجال التطوير والاستثمار العقاري والتي باشرت النشاط سنة 2023.
@@ -75,31 +78,32 @@
                         وفي الختام لابد أن أتقدم بجزيل الشكر لزبائننا الأعزاء وللسادة المساهمين وأعضاء مجلس إدارة شركتنا على دعمهم اللامحدود وثقتهم الدائمة، والشكر موصول إلى كافة فرق العمل التنفيذية على تفانيهم وجهودهم في تنفيذ المهام بكل كفاءة وتميز، والتزامهم بالخطط الاستراتيجية الموضوعة لتحقيق أهداف وتطلعات الجميع.
                          محمد سعد الراجي
                          العضو المنتدب والرئيس التنفيذي للشركة
-
                     </p>
                 </p>
             </div>
             <!-- Left Side: Logo and Vertical Text -->
-            <div class="about-left">
+            <div class="about-left" data-aos="zoom-in" data-aos-duration="1100">
                 <img src="{{ asset('assets/images/site/about/2.png') }}" alt="Logo" class="about-person">
             </div>
         </div>
+
         <div class="container">
             <!-- Right Side: Text Content -->
-            <div class="about-right">
+            <div class="about-right" data-aos="zoom-in" data-aos-duration="1100">
                 <h2 class="about-title">مجلس إدارة الشركة: (إدارة نزيهة و تعامل مرن)</h2>
                 <p class="about-description">
                     يلتزم أعضاء مجلس إدارة شركة شبكة إخوة بتنفيذ الرؤية السامية لصاحب الجلالة الملك محمد السادس نصره الله وأيده والمساهمة في تعزيز اقتصاد العاصمة الإسماعيلية مكناس. كما يتمثل الدور الأساسي لمجلس الإدارة في توفير التوجيه الاستراتيجي والرقابة المُثلى للشركة. كما يعمل المجلس على ضمان وحماية أصول واستثمارات الشركة من كافة المخاطر الخارجية.
                 </p>
             </div>
-                <!-- Left Side: Logo and Vertical Text -->
-            <div class="about-left">
+            <!-- Left Side: Logo and Vertical Text -->
+            <div class="about-left" data-aos="zoom-in" data-aos-duration="1100">
                 <img src="{{ asset('assets/images/site/about/3.jpeg') }}" alt="Logo" class="about-logo">
             </div>
         </div>
+
         <div class="container row2">
             <!-- Right Side: Text Content -->
-            <div class="about-right">
+            <div class="about-right" data-aos="zoom-in" data-aos-duration="1100">
                 <h2 class="about-title">استراتيجية الشركة:</h2>
                 <p class="about-description">
                     تعتمد إدارة شركة "IKHWA NETWORK" على إجراء أبحاث ودراسات دائمة وشاملة للسوق وتوجهات وميول الزبائن، سعياً لتطوير استراتيجية عمل محكمة تمنحها المرونة والجاهزية الدائمة للتكيف مع هذه التوجهات والميول المتنامية. فقد تبنت الشبكة استراتيجية دقيقة طويلة الأجل، لتنفيذ رؤيتها ورسالتها ومحاورها الاستراتيجية، وأطلقت مبادرات شاملة في إطار كل ركيزة وأعدت خطة عمل واضحة لتحقيق أهدافها. وفيما يلي نورد ركائز تطبيق استراتيجية الشركة:
@@ -112,37 +116,35 @@
                 </p>
             </div>
             <!-- Left Side: Logo and Vertical Text -->
-            <div class="about-left">
+            <div class="about-left" data-aos="zoom-in" data-aos-duration="1100">
                 <img src="{{ asset('assets/images/site/about/4.png') }}" alt="Logo" class="about-person">
             </div>
         </div>
+
         <div class="container custom">
             <!-- Right Side: Text Content -->
-            <div class="about-right">
+            <div class="about-right" data-aos="zoom-in" data-aos-duration="1100">
                 <h2 class="about-title">قصة الشركة في أسطر:</h2>
                 <p class="about-description">
                     اعتمد الأعضاء المؤسسين، استراتيجية التطوير المستمر منذ البدايات الأولى للنشاط المهني في المجال التقني ليصبحوا من البارزين في المجال. وبرؤية رجال الأعمال الناجحين الطموحين. امتد النشاط إلى قطاع التطوير العقاري مُستثمرين الخبرات المعرفية والتقنية في توفير مُنتج عقاري مُتميز.
                     <br>
-                    <br>
-                    <br>
                     ومع تطور أعمال ومشاريع المُساهمين تم تأسيس شبكة إخوة "IKHWA NETWORK" سنة 2023 كشركة ذات مسؤولية محدودة بِمُوجب سجل تجاري رقم 59287 لِتصبح إحدى الشركات الناشطة في المجال العقاري بالمملكة المغربية، التي تُقدم باقة من الحلول والخدمات الاحترافية المتكاملة في الشراء والتأجير واستثمار الأراضي والعقارات وتطوير وإدارة وتشغيل وصيانة المباني السكنية والتجارية، وفقا لأعلى معايير الجودة والأمان والكفاءة المعمول بها عالميا في هذا المجال.
-                    <br>
-                    <br>
-                    <br>
                     <p class="p-custom">
                         تعمل شبكة إخوة على تطبيق أفضل المُمارسات المهنية في إدارة مشاريعها. من خلال الكوادر الإدارية والخدمية الماهرة، وتعظيم نقاط القوة فيها وتحويل التحديات إلى فرص تطوير حقيقية تؤدي إلى مزيد من النمو والازدهار، كل ذلك وفق بنية تنظيمية متقنة بالتزام معايير حوكمة الشركات المتكاملة. وخلق بيئة عمل احترافية متطورة، كما أن الشركة تمنح جميع منسوبيها فرصة التطوير والتدريب وصقل المواهب والمهارات، وتعزيز مفهوم العمل بروح الفريق الواحد، وتكريس القيم المهنية المُتميزة في جميع قنوات العمل في الشركة.
                     </p>
                 </p>
             </div>
-                <!-- Left Side: Logo and Vertical Text -->
-            <div class="about-left">
+            <!-- Left Side: Logo and Vertical Text -->
+            <div class="about-left" data-aos="zoom-in" data-aos-duration="1100">
                 <img src="{{ asset('assets/images/site/about/5.jpeg') }}" alt="Logo" class="about-logo">
             </div>
         </div>
+
     </section>
     <!-- End About Us -->
+
     {{-- Start Features --}}
-    <div class="features">
+    <div class="features" data-aos="fade-up" data-aos-duration="1100">
         <div class="container">
             <div class="feature-box">
                 <div class="icon-container">
@@ -213,8 +215,9 @@
         </div>
     </div>
     {{-- End Features --}}
+
     {{-- Start Services --}}
-    <div class="services">
+    <div class="services" data-aos="fade-up" data-aos-duration="1100">
         <div class="container">
             <div class="head">
                 <h2 class="title">خدمـــــــــــــــــــــــــــاتنـــــــــــــــــا </h2>
@@ -334,8 +337,9 @@
         </div>
     </div>
     {{-- End Services --}}
+
     {{-- Start Partners --}}
-    <div class="partners">
+    <div class="partners" data-aos="fade-up" data-aos-duration="1100">
         <div class="head">
             <h2 class="title">شُركـــــــــــــــــــــــــــــــــــــــــاؤنـــــــــــــــــــــــــــــــــــــــا </h2>
             <p class="intro">
@@ -374,11 +378,12 @@
                 <p>إخوة للاستثمارات</p>
               </div>
         </div>
-      </div>
-      {{-- Start Partners --}}
+    </div>
+    {{-- Start Partners --}}
 
-      {{-- Strat Accordion --}}
-      <div class="accordion" id="accordionExample">
+    {{-- Start FAQ --}}
+    <div class="faq" data-aos="fade-up" data-aos-duration="1100">
+    <div class="accordion" id="accordionExample">
         <div class="head">
             <h2 class="title">الاستفســـــــــــــــــــارات والتساؤلات</h2>
             <p class="intro">
@@ -388,68 +393,158 @@
         <div class="container">
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     ما هي شبكة إخوة؟
-                  </button>
+                    </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                    <div class="accordion-body">
+                        شبكة إخوة هي شركة ناشطة في المجال العقاري بالعاصمة الإسماعيلية مكناس وتم تأسيسها سنة 2023 بواسطة رجال أعمال مغاربة.
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
+                </div>
+                <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     ما هو الشكل والاسم القانوني للشبكة؟
-                  </button>
+                    </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                    <div class="accordion-body">
+                        الشكل القانوني للشبكة هو شركة ذات مسؤولية مَحدودة مُتعددة الشركاء وهي مُسجلة بالمحكمة التجارية بالعاصمة الإسماعيلية مكناس تحت رقم 59287 والاسم القانوني المُعتمد هو IKHWA NETWORK SARL.
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
+                </div>
+                <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    ما هي الأدوار الأساسية للشبكة؟
-                  </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    أين تتموقع شبكة إخوة؟
+                    </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                    <div class="accordion-body">
+                        شبكة إخوة مُتمركزة بالعاصمة الإسماعيلية مكناس ويقع مقرها الإجتماعي بـ فيلا رقم 194 رياض تولال رقم 1 
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
+                </div>
+                <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    أين تتواجد مقرات الشبكة؟
-                  </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        من يُمثل شبكة إخوة قانونيا؟
+                    </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        المُمثل القانوني لشبكة إخوة هو السيد محمد سعد الراجي وذلك بتفويض من مجلس إدارتها.
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    من هو رئيس مجلس الإدارة والمدير التنفيذي؟
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
                 </div>
-              </div>
+            </div>
+        </div> {{-- / container --}}
+        </div> {{-- / accordion --}}
+    </div>
+    {{-- End FAQ --}}
+
+    {{-- Start Contact --}}
+    <div class="contact" data-aos="fade-up" data-aos-duration="1100">
+        <div class="container">
+            <!-- قسم معلومات الاتصال -->
+            <div class="info-section">
+                <div>
+                    <h2>معلومات الاتصال</h2>
+                    <p>
+                        للحصول على المزيد من المعلومات حول خدماتنا ومنتجاتنا أو تقديم شكاية، المرجو التواصل معنا عبر ملء الإستمارة الآتية
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        00212663806725
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>
+                    </p>
+                    <a href="https://www.google.com/maps?q=33.894917,-5.595111" target="_blank">
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            فيلا رقم 194 رياض النخيل 1 جهة فاس مكناس، 50040
+                        </p>
+                    </a>
+
+                </div>
+                <div class="social-links">
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <img src="{{ asset('assets/images/site/contact.svg') }}" alt="Contact">
+            </div>
+            <!-- قسم نموذج الاتصال -->
+            <div class="form-section">
+                <form>
+                    <div>
+                        <label for="full-name">اسمك الكامل</label>
+                        <input type="text" id="full-name" placeholder="أدخل اسمك" required>
+                    </div>
+
+                    <div class="custom">
+                        <div>
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="أدخل البريد الإلكتروني" required>
+
+                        </div>
+                        <div>
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="text" id="phone" placeholder="5X XXX XXXX" required>
+                        </div>
+                    </div>
+
+                    <div class="file-upload">الإستمارة
+                        <label for="file" class="file-label">
+                            <span class="label-text">أرفق الإستمارة</span>
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <input type="file" id="file" class="file-input">
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <label for="description">الوصف</label>
+                        <textarea id="description" placeholder="أدخل الوصف..." rows="4"></textarea>
+
+                    </div>
+
+                    <div class="radio-section">
+                        <label>
+                            <input type="radio" name="option" value="استفسار">
+                            <span class="custom-radio"></span> استفسار
+                        </label>
+                        <label>
+                            <input type="radio" name="option" value="شكوى">
+                            <span class="custom-radio"></span> شكوى
+                        </label>
+                        <label>
+                            <input type="radio" name="option" value="اقتراح" checked>
+                            <span class="custom-radio"></span> اقتراح
+                        </label>
+                    </div>
+
+
+                    <button type="submit">إرسال</button>
+                </form>
             </div>
         </div>
-     </div>
-      {{-- End Accordion --}}
+    </div>
+    {{-- End Contact --}}
+
 @endsection
 
 @push('scripts')
@@ -506,7 +601,44 @@
 
     // Initialize with the first icon active
     handleSlideEvent(swiper.realIndex);
+
+
 });
+
+    // This script dynamically updates the source of partner images based on screen size.
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll('.partner .image img'); // اختر جميع الصور داخل الشركاء
+        const alternativeImages = [
+            "{{ asset('assets/images/site/partners/1s.png') }}",
+            "{{ asset('assets/images/site/partners/2s.png') }}",
+            "{{ asset('assets/images/site/partners/3s.png') }}",
+            "{{ asset('assets/images/site/partners/4s.png') }}",
+            "{{ asset('assets/images/site/partners/5s.png') }}"
+        ]; // روابط الصور البديلة
+
+        const defaultImages = [
+            "{{ asset('assets/images/site/partners/1.png') }}",
+            "{{ asset('assets/images/site/partners/2.png') }}",
+            "{{ asset('assets/images/site/partners/3.png') }}",
+            "{{ asset('assets/images/site/partners/4.png') }}",
+            "{{ asset('assets/images/site/partners/5.png') }}"
+        ]; // روابط الصور الافتراضية
+
+        function updateImages() {
+            images.forEach((img, index) => {
+                if (window.innerWidth <= 768) {
+                    img.src = alternativeImages[index]; // استخدم الصور البديلة للشاشات الصغيرة
+                } else {
+                    img.src = defaultImages[index]; // استخدم الصور الافتراضية للشاشات الكبيرة
+                }
+            });
+        }
+
+        // استدعاء الدالة عند تحميل الصفحة وتغيير حجم الشاشة
+        updateImages();
+        window.addEventListener('resize', updateImages);
+    });
 
     </script>
 @endpush

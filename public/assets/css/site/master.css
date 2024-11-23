@@ -23,6 +23,7 @@ html {
 body {
     font-family: "IBM Plex Sans Arabic", sans-serif !important;
     direction: rtl;
+    position: relative;
 }
 
 a {
@@ -34,6 +35,40 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background-color: white;
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+}
+
 /* End Global Rules */
 /* Start Component */
 .head {
@@ -211,18 +246,20 @@ ul {
 .header .main-nav > li > a {
     display: flex;
     align-items: center;
-    height: 72px;
+    height: 60px;
     position: relative;
     color: black;
-    padding: 0 15px;
+    padding: 0 10px;
+    margin: 0 10px;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 19px;
     transition: var(--main-transition);
     color: var(--grayColor);
-    font-size: 24px;
     font-weight: 400;
     border: 3px solid transparent;
     transition: 0.3s;
+    font-weight: 700;
+    border: 3px solid transparent;
 }
 
 @media (max-width: 1199px) {
@@ -230,15 +267,16 @@ ul {
         font-size: 18px;
     }
 }
+
 .header .main-nav > li > a:hover {
-    border: 3px solid var(--primaryColor);
-    border-color: transparent transparent var(--primaryColor) transparent;
+    border: 3px solid transparent;
+    border-bottom: 3px solid var(--primaryColor);
     color: var(--primaryColor) !important;
 }
 
 .header .main-nav > li > a.active {
-    border: 3px solid var(--primaryColor);
-    border-color: transparent transparent var(--primaryColor) transparent;
+    border: 0px solid transparent;
+    border-bottom: 3px solid var(--primaryColor);
     color: var(--primaryColor);
 }
 
@@ -290,8 +328,7 @@ ul {
 .header .lang-menu p {
     margin: 0;
     padding: 0;
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .header .lang-menu p img {
@@ -334,7 +371,7 @@ ul {
 
 /* Start Landing */
 .landing {
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 
 @media (min-width: 1500px) {
@@ -377,6 +414,12 @@ ul {
     right: 97px;
     font-size: 60px;
     font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+    .landing .swiper .swiper-slide h2 {
+        font-size: 70px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -486,6 +529,7 @@ ul {
     width: 600px;
     border-radius: 10px;
     max-width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 @media (min-width: 1200px) {
@@ -594,7 +638,6 @@ ul {
     align-items: center;
 }
 
-/* في شاشات أصغر من 991px */
 @media (max-width: 991px) {
     .services .swiper-slide {
         display: flex;
@@ -726,7 +769,8 @@ ul {
 @media (min-width: 768px) and (max-width: 1199px) {
     .services .swiper .swiper-controls {
         bottom: 8px;
-        left: 426px;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 
@@ -781,6 +825,12 @@ ul {
     margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+    .partners .container {
+        grid-template-columns: 1fr
+    }
+}
+
 .partners .partner p {
     color: rgba(51, 51, 51, 1);
     font-weight: 500;
@@ -792,6 +842,368 @@ ul {
     width: 400px;
 }
 /* Start Partners */
+/* Start FAQ */
+.faq {
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.faq .accordion .container {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.faq .accordion .accordion-item {
+    border: 1px solid #dee2e68a;
+}
+
+.faq .accordion .accordion-item .accordion-body {
+    color: var(--grayColor);
+    padding: 25px 15px;
+}
+
+.faq .accordion .accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq .accordion .accordion-item .accordion-button {
+    font-weight: 700;
+    background: transparent;
+    padding: 20px 15px;
+    color: rgba(51, 51, 51, 1);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.faq .accordion .accordion-item .accordion-button::after {
+    position: absolute;
+    left: 30px;
+}
+/* End FAQ */
+/* Start Contact */
+.contact {
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.contact .container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact .container .info-section {
+    background: rgba(0, 0, 0, 1);
+    flex: 1 1 45%;
+    color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.contact .container .info-section img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 186px;
+}
+
+.contact .container .info-section h2 {}
+
+.contact .container .info-section p {
+    color: rgba(201, 201, 201, 1) !important;
+    margin: 20px 0 30px;
+    width: 276px;
+}
+
+.contact .container .info-section p i {
+    color: white !important;
+    margin-left: 10px;
+}
+
+.contact .container .info-section p a {
+    color: rgba(201, 201, 201, 1) !important;
+    cursor: pointer;
+}
+
+.contact .container .info-section p a:hover {
+    text-decoration: underline !important;
+}
+
+.contact .container .info-section .social-links,
+footer .social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.contact .container .info-section .social-links a,
+footer .social-links a {
+    color: white;
+    background-color: rgba(27, 27, 27, 1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.contact .container .info-section .social-links a:hover,
+footer a:hover {
+    color: #000;
+    background-color: white;
+}
+
+.contact .container .form-section {
+    flex: 1 1 45%;
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact .container .info-section,
+    .contact .container .form-section {
+        flex: 1 1 100%;
+        height: auto;
+    }
+}
+
+.contact .container .form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact .container .form-section form .custom {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact .container .form-section form .custom label {
+    display: inline-block;
+}
+
+.contact .container .form-section form label {
+    display: block;
+    margin-bottom: 13px;
+    color: rgba(44, 44, 44, 1);
+    font-size: 15px;
+}
+
+.contact .container .form-section form input:not([type="radio"]),
+.contact .container .form-section form textarea {
+    width: 100%;
+    border: 1px solid rgba(208, 213, 221, 1);
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.contact .container .form-section form input::placeholder {
+    color: rgba(102, 112, 133, 1);
+    font-size: 15px;
+}
+
+.contact .container .form-section form .radio-section {
+    color: rgba(102, 112, 133, 1);
+    font-size: 15px;
+}
+
+.contact .container .form-section form .radio-section label  {
+    display: inline-block;
+    display: inline-block;
+    margin-left: 20px;
+    color: rgba(44, 44, 44, 1);
+}
+
+.contact .container .form-section form .radio-section input[type="radio"] {
+    display: none;
+}
+
+.contact .container .form-section form .radio-section .custom-radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.contact .container .form-section form .radio-section input[type="radio"]:checked + .custom-radio {
+    border-color: black;
+    background-color: black;
+}
+
+.contact .container .form-section form .radio-section input[type="radio"]:checked + .custom-radio::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.contact .container .form-section form button {
+    background: rgba(44, 44, 44, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 0;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.contact .container .form-section form .file-upload {
+
+}
+
+.contact .container .form-section form .file-upload .file-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(208, 213, 221, 1);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact .container .form-section form .file-upload .file-label .label-text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.contact .container .form-section form .file-upload .file-label .icon {
+
+    margin-left: 10px;
+}
+
+.contact .container .form-section form .file-upload .file-label .file-input {
+    display: none;
+}
+/* End Contact */
+/* Start Footer */
+footer {
+    padding: 0 0 50px;
+    position: relative;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container > div {
+    flex: 1; /* يجعل كل عنصر يأخذ نفس العرض */
+    text-align: center; /* محاذاة النصوص والعناصر داخلياً للوسط */
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 0;
+    width: 30%;
+}
+
+footer .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+footer .footer-links ul li {
+    margin: 0;
+}
+
+footer .footer-links ul li a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer .footer-links ul li a {
+    border: 3px solid transparent;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+footer .footer-links ul li a:hover {
+    border: 3px solid var(--primaryColor);
+    border-color: transparent transparent var(--primaryColor) transparent;
+    color: var(--primaryColor) !important;
+}
+
+footer .footer-logo {
+    text-align: center;
+}
+
+footer .footer-logo img {
+    width: 100px;
+}
+
+footer .social-links {
+    justify-content: end;
+}
+
+footer p {
+    font-weight: 500;
+    margin-top: 60px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    footer .footer-logo {
+      order: -1;
+    }
+
+    footer .footer-links {
+        width: 100%;
+        justify-content: start;
+    }
+
+    footer .footer-links ul {
+      flex-direction: column;
+      gap: 20px;
+      text-align: right;
+    }
+
+    footer .social-links {
+        width: 100%;
+        justify-content: start;
+    }
+
+    footer .social-links ul {
+      justify-content: center;
+    }
+
+
+  }
 /*
 =========================================
 ========== Index Page =================

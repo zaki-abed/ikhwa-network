@@ -40,7 +40,11 @@
         @yield('content')
     </main>
 
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    @include('partials.site.footer')
     {{-- JS Files --}}
     <!-- jQuery -->
     <script src="{{ asset('assets/js/site/jquery.js') }}"></script>
@@ -63,6 +67,31 @@
     <script>
         AOS.init();
     </script>
+    <script>
+    // {{-- Button: Up to top --}}
+    document.addEventListener("DOMContentLoaded", function () {
+        // الزر
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        // تابع التمرير لإظهار/إخفاء الزر
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        // انقر للانتقال إلى الأعلى
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // تمرير سلس
+            });
+        });
+    });
+    </script>
+
     @stack('scripts')
 </body>
 </html>
