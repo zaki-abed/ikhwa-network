@@ -13,32 +13,14 @@ use App\Http\Controllers\Admin\AdminController;
 */
 
 Route::get('/', function () {
-    return redirect('/ar/site');
+    return redirect('/ar');
 });
 
-
-Route::group(['prefix' => '{locale}/site', 'as' => 'site.'], function () {
+Route::group(['prefix' => '{locale}', 'as' => 'site.'], function () {
     Route::get('/', [SiteController::class, 'home'])->name('home');
-    Route::get('/about', [SiteController::class, 'about'])->name('about');
-    Route::get('/contact', [SiteController::class, 'contact'])->name('contact');
-    Route::get('/services', [SiteController::class, 'services'])->name('services');
+    Route::get('/careers', [SiteController::class, 'careers'])->name('careers');
     Route::get('/partners', [SiteController::class, 'partners'])->name('partners');
-});
-
-
-/*
-|--------------------------------------------------------------------------
-| Admin Routes
-|--------------------------------------------------------------------------
-|
-*/
-
-// Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function () {
-//     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
-//     Route::get('/users', [AdminController::class, 'users'])->name('users');
-//     Route::get('/settings', [AdminController::class, 'settings'])->name('settings');
-// });
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    Route::get('/terms-and-conditions', [SiteController::class, 'terms'])->name('terms');
+    Route::get('/privacy-policy', [SiteController::class, 'privacy'])->name('privacy');
 });
 

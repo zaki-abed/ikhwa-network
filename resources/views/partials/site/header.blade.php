@@ -13,13 +13,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('site.about', ['locale' => app()->getLocale()]) }}"
+                        <a href="#about"
                            class="{{ Route::currentRouteName() === 'site.about' ? 'active' : '' }}">
                             {{ __('site.header.about') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('site.services', ['locale' => app()->getLocale()]) }}"
+                        <a href="#services"
                            class="{{ Route::currentRouteName() === 'site.services' ? 'active' : '' }}">
                             {{ __('site.header.services') }}
                         </a>
@@ -30,17 +30,26 @@
                             {{ __('site.header.partners') }}
                         </a>
                     </li>
-                    <li><a href="#">{{ __('site.header.careers') }}</a></li>
-                    <li><a href="#">{{ __('site.header.inquiries') }}</a></li>
                     <li>
-                        <a href="{{ route('site.contact', ['locale' => app()->getLocale()]) }}"
+                        <a href="{{ route('site.careers', ['locale' => app()->getLocale()]) }}"
+                           class="{{ Route::currentRouteName() === 'site.careers' ? 'active' : '' }}">
+                            {{ __('site.header.careers') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#faq"
+                           class="{{ Route::currentRouteName() === 'site.inquiries' ? 'active' : '' }}">
+                            {{ __('site.header.inquiries') }}
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
                            class="{{ Route::currentRouteName() === 'site.contact' ? 'active' : '' }}">
                             {{ __('site.header.contact') }}
                         </a>
                     </li>
                 </ul>
-
-
                 <div class="lang-menu li-dropdown">
                     <p>
                         <!-- العلم الحالي مع اللغة -->
@@ -83,8 +92,6 @@
                         </ul>
                     </div>
                 </div>
-
-
             </div>
             <i class="fa-regular fa-bars btn-show-nav"></i>
         </div>
