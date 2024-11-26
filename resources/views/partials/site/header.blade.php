@@ -1,7 +1,7 @@
     <!-- Start Header -->
     <div class="header" id="header">
         <div class="container">
-            <a href="#" class="logo">
+            <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}" class="logo">
                 <img src="{{ asset('assets/images/site/large-logo.png') }}" alt="Logo">
             </a>
             <div class="hide-nav">

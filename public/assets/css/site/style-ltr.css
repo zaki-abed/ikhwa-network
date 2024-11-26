@@ -83,7 +83,15 @@ footer .footer-links ul {
 }
 
 .header .hide-nav .lang {
-
     padding-right: auto;
     padding-left: 25px;
+}
+
+.contact .container .info-section img {
+    bottom: 5px;
+    right: -6px;
+    left: auto;
+    width: 116px;
+    transform: rotate(270deg);
+    overflow: hidden;
 }
