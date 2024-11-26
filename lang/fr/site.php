@@ -3,6 +3,8 @@
 // French
 
 return [
+
+    // Header
     'header' => [
         'home' => 'Accueil',
         'about' => 'Notre Entreprise',
@@ -13,7 +15,9 @@ return [
         'contact' => 'Contactez-nous',
     ],
 
+    // Home Page
     'Home_page' => [
+        // Section: Landing
         'landing_section' => [
             'slide_1' => 'Ambition avec des <span>horizons infinis</span>',
             'slide_2' => 'Maîtrisez avec des <span>compétences</span> illimitées',
@@ -22,9 +26,24 @@ return [
             'slide_5' => 'Le <span>partenariat</span> est la clé du succès, de l\'intégration et de la stabilité du marché',
         ],
 
+        // Section: About Us
         'about_section' => [
 
         ],
+    ],
+
+    // Footer
+    'footer' => [
+        'home' => 'Accueil',
+        'about' => 'Notre Entreprise',
+        'services' => 'Nos Services',
+        'partners' => 'Nos Partenaires',
+        'careers' => 'Carrières',
+        'inquiries' => 'Demandes',
+        'contact' => 'Contactez-nous',
+        'termsAndConditions' => 'Conditions générales',
+        'privacyPolicy' => 'Politique de confidentialité',
+
     ],
 
 ];

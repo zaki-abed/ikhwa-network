@@ -11,27 +11,27 @@
                 <div class="swiper-slide">
                     <div class="overlay"></div>
                     <h2>{!! __('site.Home_page.landing_section.slide_1') !!}</h2>
-                    <img src="{{ asset('assets/images/site/landing/1.jpeg') }}" alt="Landing">
+                    <img src="{{ asset('assets/images/site/landing/1.jpeg') }}" alt="طـــموح بآفــــاق لا نهــائية">
                 </div>
                 <div class="swiper-slide">
                     <div class="overlay"></div>
                     <h2>{!! __('site.Home_page.landing_section.slide_2') !!}</h2>
-                    <img src="{{ asset('assets/images/site/landing/2.jpeg') }}" alt="Landing">
+                    <img src="{{ asset('assets/images/site/landing/2.jpeg') }}" alt="إحــــترف بخـــبـــرات لا نهـــائية">
                 </div>
                 <div class="swiper-slide">
                     <div class="overlay"></div>
                     <h2>{!! __('site.Home_page.landing_section.slide_3') !!}</h2>
-                    <img src="{{ asset('assets/images/site/landing/3.jpeg') }}" alt="Landing">
+                    <img src="{{ asset('assets/images/site/landing/3.jpeg') }}" alt="مــع إخــوة أنــتم مـنا ونَــحن مِنــكم">
                 </div>
                 <div class="swiper-slide">
                     <div class="overlay"></div>
                     <h2>{!! __('site.Home_page.landing_section.slide_4') !!}</h2>
-                    <img src="{{ asset('assets/images/site/landing/4.jpeg') }}" alt="Landing">
+                    <img src="{{ asset('assets/images/site/landing/4.jpeg') }}" alt="نــحن هُـنا لتحقــيق مُتطلــباتك وتقــديم الأفـضل لك">
                 </div>
                 <div class="swiper-slide">
                     <div class="overlay"></div>
                     <h2>{!! __('site.Home_page.landing_section.slide_5') !!}</h2>
-                    <img src="{{ asset('assets/images/site/landing/5.jpeg') }}" alt="Landing">
+                    <img src="{{ asset('assets/images/site/landing/5.jpeg') }}" alt="الشراكة هي مفتاح النجاح والتكامل والاستقرار في السوق">
                 </div>
             </div>
         </div>
@@ -45,7 +45,8 @@
             <div class="about-right">
                 <h2 class="about-title">تعرف على شركـــــــــــــــــــــــتنا:</h2>
                 <p class="about-description">
-                    شبكة إخوة هي من إحدى الشركات التي تنشط بالمجال العقاري في السوق المغربي حيث تأسست 2023 لتبدأ رحلتها من العاصمة الإسماعيلية مكناس بهدف تقديم خدمات عقارية عالية الجودة بما يلبي احتياج الزبائن ويحقق أهداف المُستثمرين. وتهدف دائما إلى تعزيز علاقاتها وإقامة شراكات استراتيجية مع المؤسسات التجارية الفاعلة بالمُجتمع.                </p>
+                    شبكة إخوة هي من إحدى الشركات التي تنشط بالمجال العقاري في السوق المغربي حيث تأسست 2023 لتبدأ رحلتها من العاصمة الإسماعيلية مكناس بهدف تقديم خدمات عقارية عالية الجودة بما يلبي احتياج الزبائن ويحقق أهداف المُستثمرين. وتهدف دائما إلى تعزيز علاقاتها وإقامة شراكات استراتيجية مع المؤسسات التجارية الفاعلة بالمُجتمع.
+                 </p>
             </div>
                 <!-- Left Side: Logo and Vertical Text -->
             <div class="about-left">
@@ -344,31 +345,31 @@
         <div class="container">
             <div class="partner">
                 <div class="image">
-                  <img src="{{ asset('assets/images/site/partners/1.png') }}" alt="KARILIVE">
+                  <img src="{{ asset('assets/images/site/partners/1.png') }}" alt="إخوة للإستثمارات">
                 </div>
                 <p>إخوة للإستثمارات</p>
               </div>
               <div class="partner">
                 <div class="image">
-                  <img src="{{ asset('assets/images/site/partners/2.png') }}" alt="آري أذر">
+                  <img src="{{ asset('assets/images/site/partners/2.png') }}" alt="إخوة ديجتال">
                 </div>
                 <p>إخوة ديجتال</p>
               </div>
               <div class="partner">
                 <div class="image">
-                  <img src="{{ asset('assets/images/site/partners/3.png') }}" alt="كاريروم للمقاولات">
+                  <img src="{{ asset('assets/images/site/partners/3.png') }}" alt="كاريهوم للمقاولات">
                 </div>
                 <p>كاريهوم للمقاولات</p>
               </div>
               <div class="partner">
                 <div class="image">
-                  <img src="{{ asset('assets/images/site/partners/4.png') }}" alt="إخوة ديجيتال">
+                  <img src="{{ asset('assets/images/site/partners/4.png') }}" alt="أرتي أدز">
                 </div>
                 <p> أرتي أدز</p>
               </div>
               <div class="partner">
                 <div class="image">
-                  <img src="{{ asset('assets/images/site/partners/5.png') }}" alt="إخوة للاستثمارات">
+                  <img src="{{ asset('assets/images/site/partners/5.png') }}" alt="كاريلايف">
                 </div>
                 <p> كاريلايف</p>
               </div>
@@ -502,7 +503,7 @@
                         </div>
                         <div>
                             <label for="phone">رقم الهاتف</label>
-                            <input id="phone" type="tel" placeholder="06X XXX XXXX" required>
+                            <input id="phone" type="tel" placeholder="06X XXX XXXX" required maxlength="10">
                         </div>
                     </div>
 
@@ -547,111 +548,6 @@
 @endsection
 
 @push('scripts')
-    <script>
-    const landingSwiper = new Swiper('.landingSwiper', {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper('.mySwiper', {
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    const iconBoxes = document.querySelectorAll('.icon-box');
-
-    function handleSlideEvent(index) {
-    iconBoxes.forEach((box, i) => {
-        const iconWrapper = box.querySelector('.icon-wrapper');
-
-        if (iconWrapper) iconWrapper.classList.remove('active');
-    });
-
-    const activeBox = iconBoxes[index];
-    if (activeBox) {
-        const activeWrapper = activeBox.querySelector('.icon-wrapper');
-
-        if (activeWrapper) activeWrapper.classList.add('active');
-    }
-}
-
-
-    swiper.on('slideChange', function () {
-        const activeIndex = swiper.realIndex;
-        handleSlideEvent(activeIndex);
-    });
-
-    handleSlideEvent(swiper.realIndex);
-
-
-});
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll('.partner .image img');
-        const alternativeImages = [
-            "{{ asset('assets/images/site/partners/1s.png') }}",
-            "{{ asset('assets/images/site/partners/2s.png') }}",
-            "{{ asset('assets/images/site/partners/3s.png') }}",
-            "{{ asset('assets/images/site/partners/4s.png') }}",
-            "{{ asset('assets/images/site/partners/5s.png') }}"
-        ];
-
-        const defaultImages = [
-            "{{ asset('assets/images/site/partners/1.png') }}",
-            "{{ asset('assets/images/site/partners/2.png') }}",
-            "{{ asset('assets/images/site/partners/3.png') }}",
-            "{{ asset('assets/images/site/partners/4.png') }}",
-            "{{ asset('assets/images/site/partners/5.png') }}"
-        ];
-
-        function updateImages() {
-            images.forEach((img, index) => {
-                if (window.innerWidth <= 768) {
-                    img.src = alternativeImages[index];
-                } else {
-                    img.src = defaultImages[index];
-                }
-            });
-        }
-
-        updateImages();
-        window.addEventListener('resize', updateImages);
-    });
-
-const phoneInput = document.querySelector("#phone");
-
-const iti = window.intlTelInput(phoneInput, {
-    initialCountry: "ma",
-    preferredCountries: ["ma", "sa", "ps"],
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-});
-
-phoneInput.addEventListener("countrychange", function () {
-    console.log(iti.getSelectedCountryData());
-});
-
-
-    </script>
+    < src="{{ asset('assets/js/site/home-plugins.js') }}" defer></script>
 @endpush
 

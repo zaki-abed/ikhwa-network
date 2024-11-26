@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\SiteController;
-use App\Http\Controllers\Admin\AdminController;
 
 
 /*
@@ -23,4 +22,7 @@ Route::group(['prefix' => '{locale}', 'as' => 'site.'], function () {
     Route::get('/terms-and-conditions', [SiteController::class, 'terms'])->name('terms');
     Route::get('/privacy-policy', [SiteController::class, 'privacy'])->name('privacy');
 });
+
+
+
 

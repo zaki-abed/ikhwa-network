@@ -50,48 +50,33 @@
                         </a>
                     </li>
                 </ul>
-                <div class="lang-menu li-dropdown">
-                    <p>
-                        <!-- العلم الحالي مع اللغة -->
-                        @if (app()->getLocale() === 'ar')
-                            <img src="{{ asset('assets/images/site/ma.png') }}" alt="Lang"> العربية
-                        @elseif (app()->getLocale() === 'fr')
-                            <img src="{{ asset('assets/images/site/mf.png') }}" alt="Lang"> Français
-                        @elseif (app()->getLocale() === 'en')
-                            <img src="{{ asset('assets/images/site/us.png') }}" alt="Lang"> English
-                        @endif
-                        <i class="fa-solid fa-caret-down"></i>
-                    </p>
-                    <div class="dropdown-content">
-                        <ul>
-                            <!-- الروابط لتغيير اللغة مع الأعلام -->
-                            @if (app()->getLocale() !== 'fr')
-                                <li>
-                                    <a href="{{ route(Route::currentRouteName(), ['locale' => 'fr']) }}">
-                                        Français
-                                        <img src="{{ asset('assets/images/site/mf.png') }}" alt="Lang">
-                                    </a>
-                                </li>
-                            @endif
-                            @if (app()->getLocale() !== 'en')
-                                <li>
-                                    <a href="{{ route(Route::currentRouteName(), ['locale' => 'en']) }}">
-                                        English
-                                        <img src="{{ asset('assets/images/site/us.png') }}" alt="Lang">
-                                    </a>
-                                </li>
-                            @endif
-                            @if (app()->getLocale() !== 'ar')
-                                <li>
-                                    <a href="{{ route(Route::currentRouteName(), ['locale' => 'ar']) }}">
-                                        العربية
-                                        <img src="{{ asset('assets/images/site/ma.png') }}" alt="Lang">
-                                    </a>
-                                </li>
-                            @endif
-                        </ul>
-                    </div>
+
+                <div class="lang">
+                    @if (app()->getLocale() !== 'ar')
+                        <p>
+                            <a href="{{ route(Route::currentRouteName(), ['locale' => 'ar']) }}">
+                                AR
+                            </a>
+                        </p>
+                    @endif
+
+                    @if (app()->getLocale() !== 'en')
+                        <p>
+                            <a href="{{ route(Route::currentRouteName(), ['locale' => 'en']) }}">
+                                EN
+                            </a>
+                        </p>
+                    @endif
+
+                    @if (app()->getLocale() !== 'fr')
+                        <p>
+                            <a href="{{ route(Route::currentRouteName(), ['locale' => 'fr']) }}">
+                                FR
+                            </a>
+                        </p>
+                    @endif
                 </div>
+
             </div>
             <i class="fa-regular fa-bars btn-show-nav"></i>
         </div>

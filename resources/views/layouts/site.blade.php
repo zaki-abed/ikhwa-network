@@ -2,17 +2,15 @@
 <html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="google" content="notranslate">
     <meta name="description" content="شبكة إخوة هي من إحدى الشركات التي تنشط بالمجال العقاري في السوق المغربي حيث تأسست 2023 لتبدأ رحلتها من العاصمة الإسماعيلية مكناس بهدف تقديم خدمات عقارية عالية الجودة بما يلبي احتياج الزبائن ويحقق أهداف المُستثمرين. وتهدف دائما إلى تعزيز علاقاتها وإقامة شراكات استراتيجية مع المؤسسات التجارية الفاعلة بالمُجتمع.">
     <meta name="keywords" content="عقارات, استثمار عقاري, عقارات بالمملكة المغربية, إخوة نتوورك">
     <meta name="author" content="IKHWA DIGITAL BY IKHWA NETWORK">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('assets/images/site/small-logo.png') }}" sizes="32x32" />
     <title>مع إخوة أنتم منا ونحن منكم</title>
     <link rel="stylesheet" href="{{ asset('assets/css/site/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/site/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/site/splide.min.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -47,6 +45,8 @@
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
     </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lozad@1.14.0/dist/lozad.min.js"></script>
+
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {

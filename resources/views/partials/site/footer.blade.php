@@ -5,47 +5,47 @@
                 <ul>
                     <li>
                         <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}">
-                            {{ __('site.header.home') }}
+                            {{ __('site.footer.home') }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('site.partners', ['locale' => app()->getLocale()]) }}">
-                            {{ __('site.header.partners') }}
+                            {{ __('site.footer.partners') }}
                         </a>
                     </li>
                     <li>
                         <a href="#about">
-                            {{ __('site.header.about') }}
+                            {{ __('site.footer.about') }}
                         </a>
                     </li>
                     <li>
                         <a href="#services">
-                            {{ __('site.header.services') }}
+                            {{ __('site.footer.services') }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('site.careers', ['locale' => app()->getLocale()]) }}">
-                            {{ __('site.header.careers') }}
+                            {{ __('site.footer.careers') }}
                         </a>
                     </li>
                     <li>
                         <a href="#inquiries">
-                            {{ __('site.header.inquiries') }}
+                            {{ __('site.footer.inquiries') }}
                         </a>
                     </li>
                     <li>
                         <a href="#contact">
-                            {{ __('site.header.contact') }}
+                            {{ __('site.footer.contact') }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('site.terms', ['locale' => app()->getLocale()]) }}">
-                            {{ __('site.header.terms') }}
+                            {{ __('site.footer.termsAndConditions') }}
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('site.privacy', ['locale' => app()->getLocale()]) }}">
-                            {{ __('site.header.privacy') }}
+                            {{ __('site.footer.privacyPolicy') }}
                         </a>
                     </li>
 

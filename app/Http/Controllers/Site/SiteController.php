@@ -11,8 +11,24 @@ class SiteController extends Controller
     {
         return view('site.home');
     }
-    public function about()
+
+    public function partners()
     {
-        return view('site.about-us');
+        return view('site.partners');
+    }
+
+    public function privacy()
+    {
+        return view('site.privacy-policy');
+    }
+
+    public function terms()
+    {
+        return view('site.terms-conditions');
+    }
+
+    public function careers()
+    {
+        return view('site.jobs');
     }
 }
