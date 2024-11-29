@@ -21,8 +21,15 @@ body {
 }
 
 .landing .swiper .swiper-slide h2 {
-    left: 90px;
+    left: 120px;
     right: auto;
+}
+
+@media (max-width: 768px) {
+    .landing .swiper .swiper-slide h2 {
+        left: 20px;
+        right: auto;
+    }
 }
 
 .about .about-right .p-custom.one {
@@ -95,3 +102,28 @@ footer .footer-links ul {
     transform: rotate(270deg);
     overflow: hidden;
 }
+
+.contact .container .form-section form input[type=tel]::placeholder {
+    text-align: left;
+}
+
+.services .swiper .swiper-controls {
+    right: 265px;
+    left: auto;
+}
+
+ .iti__country.iti__highlight,
+.iti__country {
+    text-align: left !important;
+}
+
+.partners-page .landing h1 {
+    text-align: left;
+    line-height: 30px !important;
+}
+
+.privacy-page .text ul li::before, .terms-page .text ul li::before {
+    right: auto;
+    left: -14px;
+}
+

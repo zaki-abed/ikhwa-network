@@ -1,12 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+/* Font: IBM Plex Sans Arabic */
+/* Extra Light */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('/assets/fonts/IBMPlexSansArabic-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('/assets/fonts/IBMPlexSansArabic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('/assets/fonts/IBMPlexSansArabic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('/assets/fonts/IBMPlexSansArabic-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('/assets/fonts/IBMPlexSansArabic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('/assets/fonts/IBMPlexSansArabic-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+/* / Font */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    * {
+        line-height: 24px !important;
+    }
+}
+
 :root {
-    --fontFamily: sans-serif, 'IBM Plex Sans Arabic';
+    --fontFamily: 'IBM Plex Sans Arabic', sans-serif ;
     --grayColor: rgba(51, 51, 51, 1);
     --primaryColor: rgba(52, 170, 73, 1);
     --altPrimaryColor: rgba(52, 170, 74, 0.7);
@@ -25,7 +82,7 @@ html {
 }
 
 body {
-    font-family: var(--fontFamily);
+    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
     direction: rtl;
     position: relative;
     overflow-x: hidden !important;
@@ -102,7 +159,7 @@ body::-webkit-scrollbar-thumb {
 .head .intro {
     font-weight: 500;
     font-size: 20px;
-    line-height: 32px;
+    line-height: 25px;
     color: rgba(79, 79, 79, 1);
 }
 
@@ -147,6 +204,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .custom-landing h1 {
@@ -164,7 +222,8 @@ body::-webkit-scrollbar-thumb {
 
 @media (min-width: 768px) {
     .custom-landing h1 {
-        font-size: 60px;
+        font-size: 50px;
+        padding-top: 20px;
     }
 
     .custom-landing p {
@@ -428,6 +487,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    text-transform: capitalize;
 }
 
 .landing .swiper .swiper-slide img {
@@ -462,6 +522,7 @@ body::-webkit-scrollbar-thumb {
     right: 97px;
     font-size: 60px;
     font-weight: 700;
+    line-height: 40px !important;
 }
 
 @media (max-width: 768px) {
@@ -555,7 +616,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--primaryColor);
     font-size: 27px;
     font-weight: 600;
-    margin-bottom: 31px;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 992px) {
@@ -578,14 +639,15 @@ body::-webkit-scrollbar-thumb {
 
 .about .about-right .about-description {
     color: rgba(79, 79, 79, 1);
-    font-size: 17px;
+    font-size: 16.66px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 28px;
 }
 
 @media (max-width: 991px) {
     .about .about-right .about-description {
-        font-size: 16px;
+        font-size: 15.66px;
+        line-height: 25px;
         width: 370px;
     }
 }
@@ -710,7 +772,7 @@ body::-webkit-scrollbar-thumb {
     padding: 20px 14px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
-    align-items: stretch;
+    align-items: center;
     gap: 14px;
 }
 
@@ -806,10 +868,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .services .service-content .service-description {
-    font-size: 20px;
+    font-size: 16.66px;
     font-weight: 500;
-    margin-bottom: 50px;
-    line-height: 33px;
+    margin-bottom: 10px;
+    line-height: 25px;
 }
 
 @media (max-width: 576px) {
@@ -825,8 +887,8 @@ body::-webkit-scrollbar-thumb {
 
 .services .service-content .service-list li {
     position: relative;
-    margin-bottom: 8px;
-    font-size: 18px;
+    margin-bottom: 5px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -869,9 +931,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .services .swiper .service-icons .icon-box p {
-    margin-top: 15px;
+    margin-top: 10px;
     width: 112px;
-    font-size: 17px;
+    font-size: 16.66px;
     font-weight: 500;
     color: rgba(79, 79, 79, 1);
 }
@@ -1038,10 +1100,10 @@ body::-webkit-scrollbar-thumb {
 
 .faq .accordion .accordion-item .accordion-body {
     color: var(--grayColor);
-    padding: 25px 15px;
+    padding: 15px 15px;
     color: rgba(79, 79, 79, 1);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16.66px;
 }
 
 .faq .accordion .accordion-item .accordion-button:focus {
@@ -1049,12 +1111,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .faq .accordion .accordion-item .accordion-button {
-    font-weight: 700;
+    font-weight: 600;
     background: transparent;
     padding: 20px 15px;
     border-bottom: 1px solid #dee2e6;
     color: rgb(51 51 51 / 88%);
-    font-size: 20px;
+    font-size: 19px;
 }
 
 @media (max-width: 768px) {
@@ -1312,17 +1374,27 @@ footer .social-links a {
     display: none;
 }
 
-.iti__country.iti__highlight,
-.iti__country {
+.contact .container .form-section form input[type=tel]::placeholder {
+    text-align: right;
+}
+
+.contact .container .iti__country.iti__highlight,
+.contact .container .iti__country {
     direction: ltr;
     text-align: right;
 }
+
+.contact .container:last-of-type {
+    margin-bottom: -80px;
+    margin-top: 40px;
+}
+/*  */
 /* Start Footer */
 footer {
     padding: 50px 0 50px;
     position: relative;
     background: rgba(244, 244, 242, 1);
-    border-top: 1px solid #eee;
+    border-top: 2px solid #6c757d;
 }
 
 footer .container {
@@ -1467,7 +1539,6 @@ footer p {
     padding: 20px;
     font-size: 60px;
     font-weight: 700;
-    font-family: 'IBM Plex Sans Arabic';
     top: calc(50% - 50px);
     transform: translateY(-50%);
     padding-right: 118px;
@@ -1815,9 +1886,9 @@ footer p {
 .privacy-page .text h2,
 .terms-page .text h2 {
     color: rgba(51, 51, 51, 1);
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
@@ -1831,10 +1902,11 @@ footer p {
 .terms-page .text ol {
     color: rgba(79, 79, 79, 1);
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     row-gap: 35px;
+
 }
 
 @media (max-width: 768px) {
@@ -1856,25 +1928,27 @@ footer p {
 .privacy-page .text ul li,
 .terms-page .text ul li {
     position: relative;
+    font-weight: 400;
 }
 
 .privacy-page .text ul li::before,
 .terms-page .text ul li::before {
     content: "";
     position: absolute;
-    top: 50%;
-    right: -19px;
+    top: 12px;
+    right: -14px;
     width: 7px;
     height: 7px;
     background-color: rgba(51, 51, 51, 1);
     border-radius: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 
 .privacy-page .text p,
 .terms-page .text p {
-    line-height: 40px;
-
+    font-size: 16.66px;
+    line-height: 25px;
+    font-weight: 400;
 }
 
 /*

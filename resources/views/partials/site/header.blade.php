@@ -2,7 +2,7 @@
     <div class="header" id="header">
         <div class="container">
             <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}" class="logo">
-                <img src="{{ asset('assets/images/site/large-logo.png') }}" alt="Logo">
+                <img src="{{ asset('assets/images/site/large-logo.png') }}" alt="{{ __('site.head.siteName') }}">
             </a>
             <div class="hide-nav">
                 <ul class="main-nav">
@@ -13,13 +13,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#about"
-                           class="{{ Route::currentRouteName() === 'site.about' ? 'active' : '' }}">
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#about"
+                            class="{{ Route::currentRouteName() === 'site.about' ? 'active' : '' }}">
                             {{ __('site.header.about') }}
-                        </a>
+                         </a>
                     </li>
                     <li>
-                        <a href="#services"
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#services"
                            class="{{ Route::currentRouteName() === 'site.services' ? 'active' : '' }}">
                             {{ __('site.header.services') }}
                         </a>
@@ -37,14 +37,14 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#faq"
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#faq"
                            class="{{ Route::currentRouteName() === 'site.inquiries' ? 'active' : '' }}">
                             {{ __('site.header.inquiries') }}
                         </a>
                     </li>
 
                     <li>
-                        <a href="#contact"
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#contact"
                            class="{{ Route::currentRouteName() === 'site.contact' ? 'active' : '' }}">
                             {{ __('site.header.contact') }}
                         </a>
@@ -83,3 +83,4 @@
     </div>
 
       <!-- End Header -->
+

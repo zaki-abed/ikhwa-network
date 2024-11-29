@@ -14,12 +14,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#about">
+                        <a href="{{ route('site.careers', ['locale' => app()->getLocale()]) }}#about">
                             {{ __('site.footer.about') }}
                         </a>
                     </li>
                     <li>
-                        <a href="#services">
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#services">
                             {{ __('site.footer.services') }}
                         </a>
                     </li>
@@ -29,12 +29,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#inquiries">
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#faq">
                             {{ __('site.footer.inquiries') }}
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <a href="{{ route('site.home', ['locale' => app()->getLocale()]) }}#contact">
                             {{ __('site.footer.contact') }}
                         </a>
                     </li>
@@ -75,7 +75,7 @@
                 </a>
             </div>
             </div>
-            <p>جميع الحقوق محفوظة لدى أخوة نتوورك 2024</p>
+            <p> {{ __('site.footer.copy_right') }}</p>
           </footer>
 
         {{-- End Footer --}}

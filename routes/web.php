@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Site\SiteController;
-
+use App\Http\Controllers\ContactFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +26,4 @@ Route::group(['prefix' => '{locale}', 'as' => 'site.'], function () {
 
 
 
+Route::post('/send-email', [ContactFormController::class, 'sendEmail'])->name('send.email');

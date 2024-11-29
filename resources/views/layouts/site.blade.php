@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate">
-    <meta name="description" content="شبكة إخوة هي من إحدى الشركات التي تنشط بالمجال العقاري في السوق المغربي حيث تأسست 2023 لتبدأ رحلتها من العاصمة الإسماعيلية مكناس بهدف تقديم خدمات عقارية عالية الجودة بما يلبي احتياج الزبائن ويحقق أهداف المُستثمرين. وتهدف دائما إلى تعزيز علاقاتها وإقامة شراكات استراتيجية مع المؤسسات التجارية الفاعلة بالمُجتمع.">
-    <meta name="keywords" content="عقارات, استثمار عقاري, عقارات بالمملكة المغربية, إخوة نتوورك">
-    <meta name="author" content="IKHWA DIGITAL BY IKHWA NETWORK">
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="keywords" content="{{ $metaKeywords }}">
+    <meta name="author" content="{{ $author }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ asset('assets/images/site/small-logo.png') }}" sizes="32x32" />
-    <title>مع إخوة أنتم منا ونحن منكم</title>
+    <title>{{ $pageTitle }}</title>
     <link rel="stylesheet" href="{{ asset('assets/css/site/normalize.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/site/all.min.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -25,17 +25,19 @@
     <div id="loading">
         <div class="spinner"></div>
     </div>
-    @include('partials.site.header')
+    <div class="page" style="display: none">
+        @include('partials.site.header')
 
-    <main style="display: none;">
-        @yield('content')
-    </main>
+        <main>
+            @yield('content')
+        </main>
 
-    <button id="scrollToTop" class="scroll-to-top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
+        <button id="scrollToTop" class="scroll-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
 
-    @include('partials.site.footer')
+        @include('partials.site.footer')
+    </div>
     <script src="{{ asset('assets/js/site/jquery.js') }}"></script>
     <script src="{{ asset('assets/js/site/plugins.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -46,6 +48,26 @@
 
 
     <script>
+$(document).ready(function () {
+    $(window).on("load", function () {
+        $("#loading").fadeOut(500, function () {
+            $(".page").fadeIn(500);
+
+            var section = window.location.hash;
+            if (section) {
+                $('html, body').animate({
+                    scrollTop: $(section).offset().top
+                }, 500);
+            }
+        });
+    });
+});
+
+
+
+
+
+    // Button up-to-top
     document.addEventListener("DOMContentLoaded", function () {
         const scrollToTopBtn = document.getElementById('scrollToTop');
 
@@ -62,12 +84,6 @@
                 top: 0,
                 behavior: 'smooth'
             });
-        });
-    });
-
-    $(window).on("load", function () {
-        $("#loading").fadeOut(500, function () {
-            $("main").fadeIn(500);
         });
     });
 
@@ -118,6 +134,15 @@ function handleNavVisibility() {
     handleNavVisibility();
 });
 
+// $(document).ready(function () {
+//     // تحقق إذا كان الـ URL يحتوي على #services
+//     if (window.location.hash === "#services") {
+//         // التمرير إلى العنصر #services بشكل تلقائي
+//         $('html, body').animate({
+//             scrollTop: $('#services').offset().top
+//         }, 1000); // التمرير بسلاسة
+//     }
+// });
 
     </script>
 
