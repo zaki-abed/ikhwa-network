@@ -19,7 +19,9 @@
         <link rel="stylesheet" href="{{ asset('assets/css/site/style-ltr.css') }}">
     @endif
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-
+    @if (in_array(app()->getLocale(), ['en', 'fr']))
+        <link rel="stylesheet" href="{{ asset('assets/css/site/english_french.css') }}">
+    @endif
 </head>
 <body>
     <div id="loading">

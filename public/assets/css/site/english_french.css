@@ -1,0 +1,43 @@
+/* Section: About */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about .about-right .p-custom.one {
+        bottom: -565px;
+    }
+}
+
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .about .custom {
+        margin-bottom: 500px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about .about-right .p-custom.one {
+        bottom: -684px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about .custom {
+        margin-bottom: 610px;
+    }
+}
+
+
+.head {
+    width: auto !important;
+}
+
+@media (max-width: 768px) {
+    .faq .accordion .accordion-item .accordion-button {
+        font-size: 14px;
+    }
+    .faq .accordion .accordion-item .accordion-body {
+        font-size: 14.66px;
+    }
+}
+
+

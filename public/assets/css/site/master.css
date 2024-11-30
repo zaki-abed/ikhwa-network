@@ -409,6 +409,12 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media (max-width: 1199px) {
+    .landing .swiper .swiper-slide h2  {
+        line-height: 70px  !important;
+    }
+}
+
 .header .main-nav > li > a:hover {
     border: 3px solid transparent;
     border-bottom: 3px solid var(--primaryColor);
@@ -522,7 +528,6 @@ body::-webkit-scrollbar-thumb {
     right: 97px;
     font-size: 60px;
     font-weight: 700;
-    line-height: 40px !important;
 }
 
 @media (max-width: 768px) {
@@ -666,11 +671,11 @@ body::-webkit-scrollbar-thumb {
 
     .about .about-right .p-custom.one {
         right: 0;
-        bottom: -371px;
+        bottom: -420px;
     }
 
     .about .container:last-of-type .about-right .p-custom.one {
-        bottom: -236px;
+        bottom: -255px;
     }
 
     .about .about-right .p-custom.two {
@@ -964,18 +969,19 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     margin-top: 10px;
     position: absolute;
-    bottom: 15px;
-    left: 265px;
     z-index: 10;
     gap: 20px;
     flex-direction: row-reverse;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 0;
 }
 
 @media (max-width: 768px) {
     .services .swiper .swiper-controls {
         left: 50%;
         transform: translateX(-50%);
-        gap: 0;
+        bottom: 0;
     }
 }
 
@@ -985,7 +991,6 @@ body::-webkit-scrollbar-thumb {
         top: auto;
         left: 50%;
         transform: translate(-50%);
-        gap: 0;
     }
 }
 
@@ -1000,15 +1005,15 @@ body::-webkit-scrollbar-thumb {
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    font-size: 30px;
     padding: 10px;
     background: rgba(51, 51, 51, 1);
     border-radius: 10px;
     display: block;
-    width: 50px;
-    height: 50px;
     text-align: center;
     color: white;
+    font-size: 15px;
+    width: 35px;
+    height: 34px;
 }
 
 @media (max-width: 768px) {
@@ -1019,16 +1024,6 @@ body::-webkit-scrollbar-thumb {
         height: 30px;
     }
 }
-
-@media (max-width: 991px) {
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 15px;
-        width: 35px;
-        height: 34px;
-    }
-}
-
 /* End Services */
 /* Start Partners */
 .partners .head {

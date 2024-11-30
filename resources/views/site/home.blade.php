@@ -227,7 +227,7 @@
                         <div class="service-content">
                             <h3 class="service-subtitle">{!! __('site.Home_page.services_section.ser_4.title') !!}</h3>
                             <p class="service-description">
-                                {!! __('site.Home_page.services_section.ser_4.title') !!}
+                                {!! __('site.Home_page.services_section.ser_4.content') !!}
                             </p>
                         </div>
                         <div class="image">

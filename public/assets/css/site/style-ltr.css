@@ -22,7 +22,7 @@ body {
 
 .landing .swiper .swiper-slide h2 {
     left: 120px;
-    right: auto;
+    right: 120px;
 }
 
 @media (max-width: 768px) {
@@ -33,12 +33,7 @@ body {
 }
 
 .about .about-right .p-custom.one {
-    left: -109%;
-    right: auto;
-}
-
-.about .about-right .p-custom.one {
-    left: -109%;
+    left: 0;
     right: auto;
 }
 
@@ -107,12 +102,7 @@ footer .footer-links ul {
     text-align: left;
 }
 
-.services .swiper .swiper-controls {
-    right: 265px;
-    left: auto;
-}
-
- .iti__country.iti__highlight,
+.iti__country.iti__highlight,
 .iti__country {
     text-align: left !important;
 }
@@ -127,3 +117,13 @@ footer .footer-links ul {
     left: -14px;
 }
 
+@media (max-width: 1199px) {
+    .header .main-nav > li > a {
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+.landing .swiper .swiper-slide h2 {
+    line-height: 60px;
+}

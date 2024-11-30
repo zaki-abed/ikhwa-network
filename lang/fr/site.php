@@ -289,45 +289,45 @@ return [
         ]
     ],
 
-// Partners Page
-'partnersPage' => [
-    'landing' => '
-        <span>Le partenariat</span> est la clé du succès et de l\'intégration
-        <br> et de la stabilité sur le marché
-    ',
+    // Partners Page
+    'partnersPage' => [
+        'landing' => '
+            <span>Le partenariat</span> est la clé du succès et de l\'intégration
+            <br> et de la stabilité sur le marché
+        ',
 
-    'theCommon' => [
-        'visitAnchor' => 'Visiter le site web',
-        'moreInfo' => 'Pour plus d\'informations, veuillez nous contacter'
+        'theCommon' => [
+            'visitAnchor' => 'Visiter le site web',
+            'moreInfo' => 'Pour plus d\'informations, veuillez nous contacter'
+        ],
+
+        'partners' => [
+            'partner_1' => [
+                'title' => 'IKHWA INVESTMENTS BY IKHWA NETWORK SARL',
+                'content' => 'La société IKHWA Investments (IKHWA INVESTMENTS BY IKHWA NETWORK SARL) a été fondée début 2024, basée dans la ville de Meknès, au Maroc. L\'entreprise bénéficie d\'un large héritage d\'expérience de ses employés s\'étendant sur plusieurs décennies. L\'objectif principal de la société est de faciliter toutes les procédures des investisseurs souhaitant entrer dans les secteurs appropriés du marché marocain. Par conséquent, tout investisseur cherchant à bâtir des transactions financières modernes et diversifiées à long ou court terme se verra offrir des services de conseil complets pour la gestion des actifs et des investissements, ainsi que des études de faisabilité et la création d\'entreprises, avec une supervision continue et un accompagnement pour développer les projets.'
+            ],
+
+            'partner_2' => [
+                'title' => 'IKHWA DIGITAL BY IKHWA NETWORK SARL',
+                'content' => 'IKHWA Digital est une société opérant dans les services et solutions numériques et marketing, fondée début 2024. La société dispose d\'une équipe d\'ingénieurs, de concepteurs et de spécialistes du marketing numériques qui comprennent la nature des affaires et fournissent des solutions logicielles et marketing aux clients. La société excelle dans la conception et le développement de sites web, le développement d\'applications mobiles sur toutes les plateformes et le développement de logiciels administratifs.'
+            ],
+
+            'partner_3' => [
+                'title' => 'KARIHOME SARL',
+                'content' => 'KARIHOME est une société de construction générale fondée au Maroc début 2024, spécialisée dans les travaux extérieurs, le développement de sites, les installations résidentielles et les projets de génie civil. La vision de l\'entreprise est de devenir l\'une des sociétés de construction les plus importantes du Maroc. Sa vision inclut également la création de relations durables avec les clients et les partenaires qui considèrent l\'entreprise comme une partie intégrante de leur succès. Grâce à l\'expertise, aux compétences et aux ressources de l\'entreprise, elle est capable de réaliser les projets les plus complexes. L\'entreprise emploie les meilleurs professionnels et ouvriers du secteur de la construction, dont de nombreux experts expérimentés pour garantir la progression dans tous les aspects liés aux travaux. Cette expertise a permis à l\'entreprise d\'exécuter une variété de projets dans des délais records et avec une grande qualité.'
+            ],
+
+            'partner_4' => [
+                'title' => 'ARTYADS SARL',
+                'content' => 'Fondée en 2018 à Meknès, au Maroc, ARTYADS est le réseau en ligne leader pour les artistes et photographes, comptant de nombreux membres venus de plusieurs pays. Les artistes et photographes viennent à la société pour partager leurs œuvres d\'art exceptionnelles afin de les promouvoir auprès des amateurs d\'art et des activités culturelles. L\'entreprise organise également des expositions et des événements artistiques à l\'intérieur et à l\'extérieur du Maroc. ARTYADS propose également la création de sites web, le marketing digital et la gestion des pages des réseaux sociaux pour les artistes et photographes. De plus, la société offre des managers pour les artistes et photographes, tant au Maroc qu\'à l\'international.'
+            ],
+
+            'partner_5' => [
+                'title' => 'KARILIVE SARL',
+                'content' => 'KARILIVE est une boutique en ligne proposant des produits de beauté visant à améliorer l\'élégance et la beauté des femmes. Non seulement cela, mais les produits proposés par l\'entreprise sont de haute qualité, provenant de marques originales, réputées et non contrefaites. KARILIVE SARL est gérée par une équipe professionnelle spécialisée dans les produits de beauté, et la boutique dispose également d\'un centre spécialisé dans ce domaine.'
+            ],
+        ]
     ],
-
-    'partners' => [
-        'partner_1' => [
-            'title' => 'IKHWA INVESTMENTS BY IKHWA NETWORK SARL',
-            'content' => 'La société IKHWA Investments (IKHWA INVESTMENTS BY IKHWA NETWORK SARL) a été fondée début 2024, basée dans la ville de Meknès, au Maroc. L\'entreprise bénéficie d\'un large héritage d\'expérience de ses employés s\'étendant sur plusieurs décennies. L\'objectif principal de la société est de faciliter toutes les procédures des investisseurs souhaitant entrer dans les secteurs appropriés du marché marocain. Par conséquent, tout investisseur cherchant à bâtir des transactions financières modernes et diversifiées à long ou court terme se verra offrir des services de conseil complets pour la gestion des actifs et des investissements, ainsi que des études de faisabilité et la création d\'entreprises, avec une supervision continue et un accompagnement pour développer les projets.'
-        ],
-
-        'partner_2' => [
-            'title' => 'IKHWA DIGITAL BY IKHWA NETWORK SARL',
-            'content' => 'IKHWA Digital est une société opérant dans les services et solutions numériques et marketing, fondée début 2024. La société dispose d\'une équipe d\'ingénieurs, de concepteurs et de spécialistes du marketing numériques qui comprennent la nature des affaires et fournissent des solutions logicielles et marketing aux clients. La société excelle dans la conception et le développement de sites web, le développement d\'applications mobiles sur toutes les plateformes et le développement de logiciels administratifs.'
-        ],
-
-        'partner_3' => [
-            'title' => 'KARIHOME SARL',
-            'content' => 'KARIHOME est une société de construction générale fondée au Maroc début 2024, spécialisée dans les travaux extérieurs, le développement de sites, les installations résidentielles et les projets de génie civil. La vision de l\'entreprise est de devenir l\'une des sociétés de construction les plus importantes du Maroc. Sa vision inclut également la création de relations durables avec les clients et les partenaires qui considèrent l\'entreprise comme une partie intégrante de leur succès. Grâce à l\'expertise, aux compétences et aux ressources de l\'entreprise, elle est capable de réaliser les projets les plus complexes. L\'entreprise emploie les meilleurs professionnels et ouvriers du secteur de la construction, dont de nombreux experts expérimentés pour garantir la progression dans tous les aspects liés aux travaux. Cette expertise a permis à l\'entreprise d\'exécuter une variété de projets dans des délais records et avec une grande qualité.'
-        ],
-
-        'partner_4' => [
-            'title' => 'ARTYADS SARL',
-            'content' => 'Fondée en 2018 à Meknès, au Maroc, ARTYADS est le réseau en ligne leader pour les artistes et photographes, comptant de nombreux membres venus de plusieurs pays. Les artistes et photographes viennent à la société pour partager leurs œuvres d\'art exceptionnelles afin de les promouvoir auprès des amateurs d\'art et des activités culturelles. L\'entreprise organise également des expositions et des événements artistiques à l\'intérieur et à l\'extérieur du Maroc. ARTYADS propose également la création de sites web, le marketing digital et la gestion des pages des réseaux sociaux pour les artistes et photographes. De plus, la société offre des managers pour les artistes et photographes, tant au Maroc qu\'à l\'international.'
-        ],
-
-        'partner_5' => [
-            'title' => 'KARILIVE SARL',
-            'content' => 'KARILIVE est une boutique en ligne proposant des produits de beauté visant à améliorer l\'élégance et la beauté des femmes. Non seulement cela, mais les produits proposés par l\'entreprise sont de haute qualité, provenant de marques originales, réputées et non contrefaites. KARILIVE SARL est gérée par une équipe professionnelle spécialisée dans les produits de beauté, et la boutique dispose également d\'un centre spécialisé dans ce domaine.'
-        ],
-    ]
-],
 
     // Terms and Conditions
     'termsConditionsPage' => [
