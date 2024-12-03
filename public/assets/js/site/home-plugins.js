@@ -26,7 +26,7 @@
 
                     if ([2, 3, 4].includes(activeIndex)) {
                         serviceIcons.style.position = 'absolute';
-                        serviceIcons.style.bottom = '-20px';
+                        serviceIcons.style.bottom = '-70px';
                     } else {
                         serviceIcons.style.position = '';
                         serviceIcons.style.bottom = '';
@@ -106,14 +106,60 @@
     });
 
     // Phone Numbers Library
-    const phoneInput = document.querySelector("#phone");
-        const iti = window.intlTelInput(phoneInput, {
-        initialCountry: "ma",
-        preferredCountries: ["ma"],
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-        });
+    // const phoneInput = document.querySelector("#phone");
+    //     const iti = window.intlTelInput(phoneInput, {
+    //     initialCountry: "ma",
+    //     preferredCountries: ["ma"],
+    //     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    // });
 
-        phoneInput.addEventListener("countrychange", function () {
-        console.log(iti.getSelectedCountryData());
+
+
+    // Show file name
+    $('#file').on('change', function() {
+        const fileName = this.files[0] ? this.files[0].name : "No file chosen";
+        $('#file-name').text(fileName);
     });
+
+
+    // إعداد مكتبة intl-tel-input
+const phoneInput = document.querySelector("#phone");
+const iti = window.intlTelInput(phoneInput, {
+    initialCountry: "ma",  // الدولة الافتراضية
+    preferredCountries: ["ma"], // الدول المفضلة
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // تحميل السكربت الإضافي
+});
+
+// حدث عند تغيير الدولة
+phoneInput.addEventListener("countrychange", function () {
+    console.log(iti.getSelectedCountryData()); // طباعة بيانات الدولة المختارة
+});
+
+// حدث عند إرسال النموذج عبر AJAX
+$('#submit-btn').on('click', function() {
+    // الحصول على الرقم المدخل بدون المقدمة
+    const phone = phoneInput.value;
+
+    // الحصول على مقدمة الدولة
+    const dialCode = iti.getSelectedCountryData().dialCode;
+
+    // دمج مقدمة الدولة مع الرقم المدخل
+    const fullPhoneNumber = '+' + dialCode + phone;
+
+    // إرسال البيانات عبر AJAX
+    $.ajax({
+        url: '/send-email',  // الرابط الذي يستقبل الطلب
+        type: 'POST',
+        data: {
+            _token: '{{ csrf_token() }}', // CSRF Token لتأمين الطلب
+            phone: fullPhoneNumber,      // الرقم مع مقدمة الدولة
+        },
+        success: function(response) {
+            console.log(response); // عرض رسالة نجاح أو أي شيء آخر
+        },
+        error: function(xhr, status, error) {
+            console.error("حدث خطأ:", error);
+        }
+    });
+});
 

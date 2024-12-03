@@ -74,7 +74,7 @@
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit">{!! __('site.jobsPage.form.input.submit') !!}</button>
+                        <button class="main-btn" type="submit">{!! __('site.jobsPage.form.input.submit') !!}</button>
                     </form>
                 </div>
             </div>

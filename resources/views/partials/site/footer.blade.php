@@ -55,22 +55,22 @@
                 <img src="{{ asset('assets/images/site/small-logo.png') }}" alt="شعار">
               </div>
               <div class="social-links">
-                <a href="https://linkedin.com/company/ikhwanetwork" target="_blank">
+                <a class="c-linkedIn" href="https://linkedin.com/company/ikhwanetwork" target="_blank">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://www.instagram.com/ikhwanetwork" target="_blank">
+                <a class="c-insta" href="https://www.instagram.com/ikhwanetwork" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://x.com/ikhwanetwork" target="_blank">
+                <a class="c-x" href="https://x.com/ikhwanetwork" target="_blank">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="https://www.facebook.com/ikhwanetwork" target="_blank">
+                <a class="c-facebook" href="https://www.facebook.com/ikhwanetwork" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="https://whatsapp.com/channel/0029VaxvOXgKQuJNIrIC0s2t" target="_blank">
+                <a class="c-whatsapp" href="https://whatsapp.com/channel/0029VaxvOXgKQuJNIrIC0s2t" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://t.me/ikhwanetwork" target="_blank">
+                <a class="c-telegram" href="https://t.me/ikhwanetwork" target="_blank">
                     <i class="fa-brands fa-telegram"></i>
                 </a>
             </div>

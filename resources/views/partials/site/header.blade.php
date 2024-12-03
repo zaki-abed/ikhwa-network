@@ -83,4 +83,20 @@
     </div>
 
       <!-- End Header -->
+      {{-- Sidebar --}}
+    <div class="sidebar">
+        <div>
+            <a href="http://system.ikhwanetwork.com">
+                <i class="fa-solid fa-house"></i>
+                <p>{{ __('site.sidebar.dashboard') }}</p>
+            </a>
+        </div>
+        <div>
+            <a href="https://wa.me/+212663806725">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>{{ __('site.sidebar.WhatsApp') }}</p>
+            </a>
+        </div>
+    </div>
+    {{-- / Sidebar --}}
 

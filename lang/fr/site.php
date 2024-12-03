@@ -4,28 +4,28 @@
 
 return [
     'head' => [
-        'siteName' => 'Réseau Ikhwa',
+        'siteName' => 'IKHWA NETWORK',
         'title' => [
-            'home' => 'Réseau Ikhwa',
+            'home' => 'IKHWA NETWORK',
             'jobs' => 'Emplois',
             'privacyPolicy' => 'Politique de confidentialité',
-            'termsConditions' => 'Termes et conditions',
+            'termsConditions' => 'Conditions générales d\'utilisation',
             'partners' => 'Nos Partenaires',
         ],
         'meta' => [
             'description' => [
-                'homePage' => 'Ikhwa Network est l\'une des entreprises actives dans le secteur immobilier sur le marché marocain. Fondée en 2023, elle a commencé son parcours depuis la capitale ismaïlienne Meknès, dans le but de fournir des services immobiliers de haute qualité qui répondent aux besoins des clients et atteignent les objectifs des investisseurs. Elle vise toujours à renforcer ses relations et à établir des partenariats stratégiques avec les institutions commerciales actives dans la communauté.',
-                'jobsPage' => 'Découvrez des opportunités d\'emploi uniques chez Réseau Ikhwa, offrant des postes variés qui répondent aux besoins du marché et vous aident à construire un avenir professionnel réussi. Rejoignez notre équipe et atteignez vos objectifs de carrière.',
-                'termsPage' => 'En utilisant les services de Réseau Ikhwa, vous acceptez de respecter nos Conditions Générales d\'Utilisation. Nous vous recommandons de consulter ces conditions pour comprendre vos droits, vos responsabilités et comment utiliser notre plateforme correctement et légalement.',
-                'privacyPage' =>  'Politique de confidentialité, Protection des données, Confidentialité des utilisateurs, Réseau Ikhwa, Sécurité des informations, Données personnelles',
-                'partnersPage' => 'Réseau Ikhwa est fier de ses partenariats stratégiques avec des institutions et entreprises de premier plan. Nous croyons que la collaboration renforce les opportunités de succès et contribue à atteindre des objectifs communs. Découvrez nos partenaires et leur rôle dans la réalisation de notre vision.',
+                'homePage' => 'IKHWA NETWORK est l\'une des entreprises actives dans le secteur immobilier sur le marché marocain. Fondée en 2023, elle a commencé son parcours depuis la capitale ismaïlienne Meknès, dans le but de fournir des services immobiliers de haute qualité qui répondent aux besoins des clients et atteignent les objectifs des investisseurs. Elle vise toujours à renforcer ses relations et à établir des partenariats stratégiques avec les institutions commerciales actives dans la communauté.',
+                'jobsPage' => 'Découvrez des opportunités d\'emploi uniques chez IKHWA NETWORK, offrant des postes variés qui répondent aux besoins du marché et vous aident à construire un avenir professionnel réussi. Rejoignez notre équipe et atteignez vos objectifs de carrière.',
+                'termsPage' => 'En utilisant les services de IKHWA NETWORK, vous acceptez de respecter nos Conditions Générales d\'Utilisation. Nous vous recommandons de consulter ces conditions pour comprendre vos droits, vos responsabilités et comment utiliser notre plateforme correctement et légalement.',
+                'privacyPage' =>  'Politique de confidentialité, Protection des données, Confidentialité des utilisateurs, IKHWA NETWORK, Sécurité des informations, Données personnelles',
+                'partnersPage' => 'IKHWA NETWORK est fier de ses partenariats stratégiques avec des institutions et entreprises de premier plan. Nous croyons que la collaboration renforce les opportunités de succès et contribue à atteindre des objectifs communs. Découvrez nos partenaires et leur rôle dans la réalisation de notre vision.',
             ],
             'keywords' => [
-                'homePage' => 'Immobilier, Investissement immobilier, Propriétés au Maroc, Réseau Ikhwa',
-                'jobsPage' => 'Emplois, Opportunités de carrière, Réseau Ikhwa, Emplois au Maroc, Développement de carrière, Emplois immobiliers',
-                'termsPage' => 'Conditions générales, Conditions d\'utilisation, Droits des utilisateurs, Réseau Ikhwa, Responsabilités des utilisateurs, Règles de la plateforme',
-                'privacyPage' => 'Votre confidentialité est notre priorité chez Réseau Ikhwa. Nous nous engageons à protéger vos données personnelles et à garantir leur utilisation de manière transparente et sécurisée. Veuillez lire notre politique de confidentialité pour comprendre comment nous collectons, utilisons et protégeons vos informations.',
-                'partnersPage' => 'Partenaires, Partenariats stratégiques, Réseau Ikhwa, Collaboration, Entreprises leaders, Partenariats réussis',
+                'homePage' => 'Immobilier, Investissement immobilier, Propriétés au Maroc, IKHWA NETWORK',
+                'jobsPage' => 'Emplois, Opportunités de carrière, IKHWA NETWORK, Emplois au Maroc, Développement de carrière, Emplois immobiliers',
+                'termsPage' => 'Conditions générales, Conditions d\'utilisation, Droits des utilisateurs, IKHWA NETWORK, Responsabilités des utilisateurs, Règles de la plateforme',
+                'privacyPage' => 'Votre confidentialité est notre priorité chez IKHWA NETWORK. Nous nous engageons à protéger vos données personnelles et à garantir leur utilisation de manière transparente et sécurisée. Veuillez lire notre politique de confidentialité pour comprendre comment nous collectons, utilisons et protégeons vos informations.',
+                'partnersPage' => 'Partenaires, Partenariats stratégiques, IKHWA NETWORK, Collaboration, Entreprises leaders, Partenariats réussis',
             ]
         ],
     ],
@@ -33,13 +33,21 @@ return [
     // Header
     'header' => [
         'home' => 'Accueil',
-        'about' => 'Notre Entreprise',
-        'services' => 'Nos Services',
-        'partners' => 'Nos Partenaires',
-        'careers' => 'Carrières',
-        'inquiries' => 'Demandes',
-        'contact' => 'Contactez-nous',
+        'about' => 'Entreprise',
+        'services' => 'Services',
+        'partners' => 'Partenaires',
+        'careers' => 'Offres d\'emploi',
+        'inquiries' => 'Questions',
+        'contact' => 'Nous contacter',
     ],
+
+    // Sidebar
+    'sidebar' => [
+        'dashboard' => 'Aller au tableau de bord',
+        'WhatsApp' => 'Aller à WhatsApp'
+    ],
+
+
 
     // Home Page
     'Home_page' => [
@@ -216,12 +224,11 @@ return [
         'faq_section' => [
             'head' => [
                 'title' => 'FAQ et Questions',
-                'content' => 'Nous vous fournissons un ensemble de réponses aux questions reçues concernant l\'entreprise'
+                'content' => 'Nous mettons à votre disposition un ensemble de réponses aux questions sur l\'entreprise',
             ],
-
             'accordion_1' => [
-                'q' => 'Qu\'est-ce que Ikhwa Network?',
-                'a' => 'Ikhwa Network est une entreprise active dans le secteur immobilier dans la ville de Meknès, fondée en 2023 par des hommes d\'affaires marocains.'
+                'q' => 'Qu\'est-ce que IKHWA NETWORK?',
+                'a' => 'IKHWA NETWORK est une entreprise active dans le secteur immobilier dans la ville de Meknès, fondée en 2023 par des hommes d\'affaires marocains.'
             ],
 
             'accordion_2' => [
@@ -230,13 +237,13 @@ return [
             ],
 
             'accordion_4' => [
-                'q' => 'Où est située Ikhwa Network?',
-                'a' => 'Ikhwa Network est basée dans la ville de Meknès. Son siège social est situé à la Villa No. 194, Riyad Toulal No. 1.'
+                'q' => 'Où est située IKHWA NETWORK?',
+                'a' => 'IKHWA NETWORK est basée dans la ville de Meknès. Son siège social est situé à la Villa No. 194, Riyad Toulal No. 1.'
             ],
 
             'accordion_3' => [
-                'q' => 'Qui représente légalement Ikhwa Network?',
-                'a' => 'Le représentant légal d\'Ikhwa Network est M. Mohamed Saad El Raji, nommé par le Conseil d\'Administration.'
+                'q' => 'Qui représente légalement IKHWA NETWORK?',
+                'a' => 'Le représentant légal d\'IKHWA NETWORK est M. Mohamed Saad El Raji, nommé par le Conseil d\'Administration.'
             ],
         ],
 
@@ -258,7 +265,19 @@ return [
                 'inquiry' => 'Demande d\'Information',
                 'complaint' => 'Réclamation',
                 'suggestion' => 'Suggestion',
-                'submit' => 'Envoyer'
+                'submit' => 'Envoyer',
+                'workingHours' => '
+                    <strong>Heures de travail:</strong>
+                    <br>
+                        Du lundi au vendredi : de 8h00 à 17h00
+                    <br>
+                        Samedi : de 8h00 à 13h00
+                    <br>
+                    <br>
+                    <strong>Service client:</strong>
+                    24/7
+                ',
+                'fileHint' => 'Veuillez joindre un fichier ne dépassant pas 5 Mo et ayant les types suivants : .jpg, .jpeg, .png, .pdf, .xlsx, .docx'
             ]
         ]
 
@@ -273,7 +292,7 @@ return [
         'form' => [
             'head' => [
                 'title' => 'Rejoignez l\'Équipe',
-                'content' => 'Si vous cherchez une entreprise qui valorise le travail d\'équipe, l\'initiative et l\'innovation, il est évident que vous appartenez à Réseau Ikhwa.'
+                'content' => 'Si vous cherchez une entreprise qui valorise le travail d\'équipe, l\'initiative et l\'innovation, il est évident que vous appartenez à IKHWA NETWORK.'
             ],
             'input' => [
                 'name' => 'Entrez votre nom',
@@ -490,7 +509,7 @@ return [
                             11-5 Nous nous réservons le droit de révoquer l\'autorisation de lien sans préavis.
                             <br>
                             11-6 Vous devez vous assurer que le site web à partir duquel vous créez un lien respecte en tous points les normes de contenu énoncées dans la Section 13 ci-dessous.
-                            <br> Si vous souhaitez utiliser tout contenu de notre site web autrement que comme indiqué ci-dessus, veuillez nous contacter à l\'adresse email contact@ikhwanetwork.com.
+                            <br> Si vous souhaitez utiliser tout contenu de notre site web autrement que comme indiqué ci-dessus, veuillez nous contacter à l\'adresse email <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
 
                         </p>
                     </li>
@@ -540,7 +559,7 @@ return [
                             <br>
                             14-2 Nous avons le droit de désactiver tout code d\'identification ou mot de passe à tout moment, qu\'il ait été choisi par vous ou attribué par nos soins, si nous estimons que vous n\'avez pas respecté l\'une des dispositions de ces conditions d\'utilisation.
                             <br>
-                            14-3 Si vous prenez connaissance ou soupçonnez que quelqu\'un d\'autre a obtenu votre code d\'identification ou votre mot de passe, vous êtes tenu de nous en informer immédiatement à l\'adresse email contact@ikhwanetwork.com.
+                            14-3 Si vous prenez connaissance ou soupçonnez que quelqu\'un d\'autre a obtenu votre code d\'identification ou votre mot de passe, vous êtes tenu de nous en informer immédiatement à l\'adresse email <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                         </p>
                     </li>
 
@@ -569,7 +588,7 @@ return [
                     <li>
                         Contactez-nous
                         <p>
-                            Pour nous contacter, veuillez nous envoyer un email à : contact@ikhwanetwork.com.
+                            Pour nous contacter, veuillez nous envoyer un email à : <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                         </p>
                     </li>
                 </ol>
@@ -701,7 +720,7 @@ return [
                         <p>
                             3.7 Comment la société protège-t-elle vos données personnelles ?
                             <br>
-                            La nature des mesures de protection varie en fonction de la sensibilité, de \'étendue et de la méthode de stockage des données personnelles. Les types d\'informations personnelles les plus sensibles bénéficient de niveaux de protection plus élevés, tels que le cryptage. Si vous souhaitez obtenir plus d\'informations sur les mesures de protection que nous appliquons, veuillez nous contacter par e-mail à l\'adresse contact@ikhwanetwork.com.
+                            La nature des mesures de protection varie en fonction de la sensibilité, de \'étendue et de la méthode de stockage des données personnelles. Les types d\'informations personnelles les plus sensibles bénéficient de niveaux de protection plus élevés, tels que le cryptage. Si vous souhaitez obtenir plus d\'informations sur les mesures de protection que nous appliquons, veuillez nous contacter par e-mail à l\'adresse <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                         </p>
                         <p>
                             3.8 Quelle est la durée de conservation de vos données personnelles par la société ?
@@ -742,7 +761,7 @@ return [
                             </li>
                         </ul>
                         <p>
-                            Vous pouvez exercer l\'un des droits mentionnés ci-dessus en envoyant une demande à l\'adresse e-mail : contact@ikhwanetwork.com.
+                            Vous pouvez exercer l\'un des droits mentionnés ci-dessus en envoyant une demande à l\'adresse e-mail : <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
 
                             <br>
                             Dans certaines circonstances, la société peut ne pas être en mesure de fournir l\'accès à l\'intégralité des données personnelles qu\'elle détient, par exemple, lorsque la divulgation révélerait des secrets commerciaux, ou lorsque l\'information est soumise à une obligation de confidentialité entre le client et l\'avocat, ou si l\'information a été collectée lors d\'une enquête sur une violation contractuelle ou une infraction légale.
@@ -751,7 +770,7 @@ return [
                         <p>
                            3.10 Comment puis-je m\'opposer à la conformité et soumettre des suggestions ?
                             <br>
-                                Vous pouvez adresser toutes vos questions ou demandes à l\'adresse e-mail contact@ikhwanetwork.com concernant les principes de confidentialité mentionnés ci-dessus ou les pratiques de confidentialité appliquées par la société, comme indiqué dans la politique de confidentialité.
+                                Vous pouvez adresser toutes vos questions ou demandes à l\'adresse e-mail <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a> concernant les principes de confidentialité mentionnés ci-dessus ou les pratiques de confidentialité appliquées par la société, comme indiqué dans la politique de confidentialité.
                             <br>
                                 La société enquêtera sur toutes les plaintes et répondra à toute question que vous pourriez avoir. Si la plainte est jugée valide, la société prendra les mesures appropriées pour y remédier, ce qui peut inclure la modification de ses politiques et procédures.
                         </p>
@@ -787,7 +806,7 @@ return [
         'contact' => 'Contactez-nous',
         'termsAndConditions' => 'Conditions générales',
         'privacyPolicy' => 'Politique de confidentialité',
-        'copy_right' => 'Tous droits réservés à Ikhwa Network 2024'
+        'copy_right' => 'Tous droits réservés à IKHWA NETWORK 2024'
     ],
 
 ];

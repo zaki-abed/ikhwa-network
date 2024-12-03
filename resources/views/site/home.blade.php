@@ -378,6 +378,7 @@
                         </div>
                     </div>
                 </div>
+                <span style="visibility: hidden" id="contact"></span>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -389,6 +390,7 @@
                             {!! __('site.Home_page.faq_section.accordion_4.a') !!}
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -397,7 +399,7 @@
         {{-- End FAQ --}}
 
         {{-- Start Contact --}}
-        <div class="contact" id="contact">
+        <div class="contact">
             <div class="container">
                 <div class="info-section">
                     <div>
@@ -419,61 +421,66 @@
                                 {!! __('site.Home_page.contact_section.info_section.address') !!}
                             </p>
                         </a>
+                        <p>
+                            {!! __('site.Home_page.contact_section.form_section.workingHours') !!}
+                        </p>
                     </div>
                     <div class="social-links">
-                        <a href="https://linkedin.com/company/ikhwanetwork" target="_blank">
+                        <a class="c-linkedIn" href="https://linkedin.com/company/ikhwanetwork" target="_blank">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/ikhwanetwork" target="_blank">
+                        <a class="c-insta" href="https://www.instagram.com/ikhwanetwork" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://x.com/ikhwanetwork" target="_blank">
+                        <a class="c-x" href="https://x.com/ikhwanetwork" target="_blank">
                             <i class="fa-brands fa-x-twitter"></i>
                         </a>
-                        <a href="https://www.facebook.com/ikhwanetwork" target="_blank">
+                        <a class="c-facebook" href="https://www.facebook.com/ikhwanetwork" target="_blank">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="https://whatsapp.com/channel/0029VaxvOXgKQuJNIrIC0s2t" target="_blank">
+                        <a class="c-whatsapp" href="https://whatsapp.com/channel/0029VaxvOXgKQuJNIrIC0s2t" target="_blank">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
-                        <a href="https://t.me/ikhwanetwork" target="_blank">
+                        <a class="c-telegram" href="https://t.me/ikhwanetwork" target="_blank">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
                     </div>
                     <img src="{{ asset('assets/images/site/contact.svg') }}" alt="Contact">
                 </div>
                 <div class="form-section">
-                    <form method="POST" action="{{ route('send.email') }}" enctype="multipart/form-data">
+                    <form enctype="multipart/form-data">
                         @csrf
                         <div>
                             <label for="full-name">{!! __('site.Home_page.contact_section.form_section.name') !!}</label>
                             <input type="text" name="full_name" id="full-name" placeholder="{!! __('site.Home_page.contact_section.form_section.name') !!}" required>
                         </div>
-
                         <div class="custom">
                             <div>
                                 <label for="email">{!! __('site.Home_page.contact_section.form_section.email') !!}</label>
                                 <input type="email" name="email" id="email" placeholder="{!! __('site.Home_page.contact_section.form_section.email') !!}" required>
                             </div>
+
                             <div>
                                 <label for="phone">{!! __('site.Home_page.contact_section.form_section.phone') !!}</label>
-                                <input name="phone" id="phone" type="tel" placeholder="{!! __('site.Home_page.contact_section.form_section.phone') !!}" required maxlength="10">
+                                <input name="phone" id="phone" type="tel" placeholder="{!! __('site.Home_page.contact_section.form_section.phone') !!}" required>
                             </div>
-                        </div>
 
-                        <div class="file-upload">{!! __('site.Home_page.contact_section.form_section.file') !!}
+                        </div>
+                        <div class="file-upload">
+                            {!! __('site.Home_page.contact_section.form_section.file') !!}
                             <label for="file" class="file-label">
                                 <span class="label-text">{!! __('site.Home_page.contact_section.form_section.attachFile') !!}</span>
+                                <span id="file-name" style="margin-left: 10px; color: #333;"></span>
                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                 <input type="file" name="file" id="file" class="file-input">
                             </label>
-                        </div>
+                            <small>{!! __('site.Home_page.contact_section.form_section.fileHint') !!}</small>
 
+                        </div>
                         <div>
                             <label for="description">{!! __('site.Home_page.contact_section.form_section.description') !!}</label>
                             <textarea name="description" id="description" placeholder="{!! __('site.Home_page.contact_section.form_section.description') !!}" rows="4"></textarea>
                         </div>
-
                         <div class="radio-section">
                             <label>
                                 <input type="radio" name="option" value="{!! __('site.Home_page.contact_section.form_section.inquiry') !!}">
@@ -489,13 +496,13 @@
                             </label>
                         </div>
 
-                        <button type="submit">{!! __('site.Home_page.contact_section.form_section.submit') !!}</button>
+                        <button class="main-btn" id="submit-btn">{!! __('site.Home_page.contact_section.form_section.submit') !!}</button>
                     </form>
                 </div>
             </div>
             <div class="container">
                 <iframe
-                    src="https://www.google.com/maps?q=33.8949578,-5.5948789&z=19&output=embed"
+                    src="https://www.google.com/maps?q=33.8949578,-5.5948789&z=17&output=embed"
                     height="550"
                     width="100%"
                     style="border:0;"
@@ -509,5 +516,74 @@
 
 @push('scripts')
     <script src="{{ asset('assets/js/site/home-plugins.js') }}" defer></script>
+
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var input = document.querySelector("#phone");
+    var iti = window.intlTelInput(input, {
+        preferredCountries: ["ma"],
+        separateDialCode: false,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/utils.js"
+    });
+
+    $('#submit-btn').click(function(e) {
+        e.preventDefault();
+
+        var phoneNumber = "+" + iti.s.dialCode + " " + $('#phone').val();
+
+        var formData = new FormData();
+        formData.append('_token', "{{ csrf_token() }}");
+        formData.append('full_name', $('#full-name').val());
+        formData.append('email', $('#email').val());
+        formData.append('phone', phoneNumber);
+        // formData.append('file', $('#file')[0].files[0]);
+        formData.append('description', $('#description').val());
+        formData.append('option', $('input[name="option"]:checked').val());
+
+        console.log('FormData: ', formData);
+
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('send.email') }}",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                console.log(response); // تحقق من البيانات التي تم إرجاعها من الخادم
+                alert('تم إرسال البيانات بنجاح');
+            },
+            error: function(data) {
+                console.log('حدث خطأ أثناء إرسال البيانات');
+                alert('فشل في إرسال البيانات. يرجى المحاولة مرة أخرى.');
+            }
+
+        });
+    });
+});
+
+
+// $(document).ready(function() {
+//     // عند الضغط على الشريط الجانبي
+//     $('.sidebar').click(function(event) {
+//         event.stopPropagation(); // منع التفاعل مع حدث الضغط العام
+//         $(this).css('left', '0px'); // فتح الشريط الجانبي
+//     });
+
+//     // عند الضغط في أي مكان على الشاشة
+//     $(document).click(function() {
+//         $('.sidebar').css('left', '-180px'); // إغلاق الشريط الجانبي
+//     });
+// });
+
+    </script>
+
+
+    </script>
 @endpush
 

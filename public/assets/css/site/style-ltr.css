@@ -127,3 +127,51 @@ footer .footer-links ul {
 .landing .swiper .swiper-slide h2 {
     line-height: 60px;
 }
+
+.partners-page .landing h1 {
+    text-align: left;
+    line-height: 32px !important;
+}
+
+.partners-page .partners-section .partner-box {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .partners-page .partners-section .partner-box .bottom-side .contact {
+        align-self: flex-start !important;
+    }
+}
+
+.partners-page .landing h1 {
+    padding:   0 60px;
+    line-height: 55px !important;
+}
+
+.partners-page .partners-section .partner-box .bottom-side .contact p:first-child {
+    font-size: 16.5px
+}
+
+html[lang="fr"] .header .main-nav > li > a {
+    font-size: 16px !important;
+    margin: 0 !important;
+}
+html[lang="fr"] .sidebar {
+    right: -214px !important;
+    left: auto;
+}
+
+html[lang="fr"] .sidebar:hover {
+    right: 0 !important;
+    left: auto;
+}
+
+html[lang="en"] .sidebar {
+    right: -162px !important;
+    left: auto;
+}
+
+html[lang="en"] .sidebar:hover {
+    right: 0 !important;
+    left: auto;
+}

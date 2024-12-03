@@ -24,6 +24,4 @@ Route::group(['prefix' => '{locale}', 'as' => 'site.'], function () {
 });
 
 
-
-
 Route::post('/send-email', [ContactFormController::class, 'sendEmail'])->name('send.email');

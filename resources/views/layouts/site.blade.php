@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="{{ $metaKeywords }}">
     <meta name="author" content="{{ $author }}">
@@ -15,10 +16,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/site/master.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @if(app()->getLocale() === 'en' || app()->getLocale() === 'fr')
         <link rel="stylesheet" href="{{ asset('assets/css/site/style-ltr.css') }}">
     @endif
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/css/intlTelInput.css">
+
     @if (in_array(app()->getLocale(), ['en', 'fr']))
         <link rel="stylesheet" href="{{ asset('assets/css/site/english_french.css') }}">
     @endif
@@ -40,30 +43,32 @@
 
         @include('partials.site.footer')
     </div>
-    <script src="{{ asset('assets/js/site/jquery.js') }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.14/js/intlTelInput.min.js"></script>
     <script src="{{ asset('assets/js/site/plugins.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
     </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
 
 
     <script>
 $(document).ready(function () {
-    $(window).on("load", function () {
-        $("#loading").fadeOut(500, function () {
-            $(".page").fadeIn(500);
+    $("#loading").fadeOut(500, function () {
+        $(".page").fadeIn(500);
 
-            var section = window.location.hash;
-            if (section) {
-                $('html, body').animate({
-                    scrollTop: $(section).offset().top
-                }, 500);
-            }
-        });
+        var section = window.location.hash;
+        if (section) {
+            $('html, body').animate({
+                scrollTop: $(section).offset().top
+            }, 500);
+        }
     });
 });
+
 
 
 
@@ -88,21 +93,6 @@ $(document).ready(function () {
             });
         });
     });
-
-    document.addEventListener('click', function (event) {
-    const langMenu = document.querySelector('.lang-menu');
-    const dropdownContent = document.querySelector('.dropdown-content');
-
-    if (!langMenu.contains(event.target)) {
-        dropdownContent.style.display = 'none';
-    }
-});
-
-document.querySelector('.lang-menu p').addEventListener('click', function (event) {
-    event.stopPropagation();
-    const dropdownContent = document.querySelector('.dropdown-content');
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     const hideNav = document.querySelector('.hide-nav');
@@ -134,17 +124,13 @@ function handleNavVisibility() {
     window.addEventListener('resize', handleNavVisibility);
 
     handleNavVisibility();
+
+
+
 });
 
-// $(document).ready(function () {
-//     // تحقق إذا كان الـ URL يحتوي على #services
-//     if (window.location.hash === "#services") {
-//         // التمرير إلى العنصر #services بشكل تلقائي
-//         $('html, body').animate({
-//             scrollTop: $('#services').offset().top
-//         }, 1000); // التمرير بسلاسة
-//     }
-// });
+
+
 
     </script>
 

@@ -5,10 +5,10 @@
 return [
     // Head
     'head' => [
-        'siteName' => 'Ikhwa Network',
-        'author' => 'Ikhwa Digital by Ikhwa Network',
+        'siteName' => 'IKHWA NETWORK',
+        'author' => 'Ikhwa Digital by IKHWA NETWORK',
         'title' => [
-            'home' => 'Ikhwa Network',
+            'home' => 'IKHWA NETWORK',
             'jobs' => 'Jobs',
             'privacyPolicy' => 'Privacy Policy',
             'termsConditions' => 'Terms and Conditions',
@@ -16,18 +16,18 @@ return [
         ],
         'meta' => [
             'description' => [
-                'homePage' => 'Ikhwa Network is one of the companies active in the real estate sector in the Moroccan market. It was founded in 2023 to begin its journey from the Ismaili capital, Meknes, aiming to provide high-quality real estate services that meet customers’ needs and achieve investors’ goals. It always seeks to strengthen its relationships and establish strategic partnerships with active commercial institutions in the community.',
-                'jobsPage' => 'Explore unique job opportunities at Ikhwa Network, offering diverse positions that meet market demands and help you build a successful professional future. Join our team and achieve your career goals.',
-                'privacyPage' => 'Your privacy is our priority at Ikhwa Network. We are committed to protecting your personal data and ensuring its transparent and secure use. Please read our privacy policy to understand how we collect, use, and safeguard your information.',
-                'termsPage' => 'By using Ikhwa Network services, you agree to comply with our Terms and Conditions of Use. We encourage you to review these terms to understand your rights, responsibilities, and how to use our platform properly and legally.',
-                'partnersPage' => 'Ikhwa Network is proud of its strategic partnerships with leading institutions and companies. We believe that collaboration enhances success opportunities and contributes to achieving shared goals. Discover our partners and their role in realizing our vision.',
+                'homePage' => 'IKHWA NETWORK is one of the companies active in the real estate sector in the Moroccan market. It was founded in 2023 to begin its journey from the Ismaili capital, Meknes, aiming to provide high-quality real estate services that meet customers’ needs and achieve investors’ goals. It always seeks to strengthen its relationships and establish strategic partnerships with active commercial institutions in the community.',
+                'jobsPage' => 'Explore unique job opportunities at IKHWA NETWORK, offering diverse positions that meet market demands and help you build a successful professional future. Join our team and achieve your career goals.',
+                'privacyPage' => 'Your privacy is our priority at IKHWA NETWORK. We are committed to protecting your personal data and ensuring its transparent and secure use. Please read our privacy policy to understand how we collect, use, and safeguard your information.',
+                'termsPage' => 'By using IKHWA NETWORK services, you agree to comply with our Terms and Conditions of Use. We encourage you to review these terms to understand your rights, responsibilities, and how to use our platform properly and legally.',
+                'partnersPage' => 'IKHWA NETWORK is proud of its strategic partnerships with leading institutions and companies. We believe that collaboration enhances success opportunities and contributes to achieving shared goals. Discover our partners and their role in realizing our vision.',
             ],
             'keywords' => [
-                'homePage' => 'Real estate, Real estate investment, Properties in Morocco, Ikhwa Network',
-                'jobsPage' => 'Jobs, Career opportunities, Ikhwa Network, Jobs in Morocco, Career development, Real estate jobs',
-                'termsPage' => 'Terms and Conditions, Terms of Use, User rights, Ikhwa Network, User responsibilities, Platform rules',
-                'privacyPage' => 'Privacy Policy, Data protection, User privacy, Ikhwa Network, Information security, Personal data',
-                'partnersPage' => 'Partners, Strategic partnerships, Ikhwa Network, Collaboration, Leading companies, Successful partnerships',
+                'homePage' => 'Real estate, Real estate investment, Properties in Morocco, IKHWA NETWORK',
+                'jobsPage' => 'Jobs, Career opportunities, IKHWA NETWORK, Jobs in Morocco, Career development, Real estate jobs',
+                'termsPage' => 'Terms and Conditions, Terms of Use, User rights, IKHWA NETWORK, User responsibilities, Platform rules',
+                'privacyPage' => 'Privacy Policy, Data protection, User privacy, IKHWA NETWORK, Information security, Personal data',
+                'partnersPage' => 'Partners, Strategic partnerships, IKHWA NETWORK, Collaboration, Leading companies, Successful partnerships',
             ]
         ],
     ],
@@ -41,6 +41,12 @@ return [
         'careers' => 'Careers',
         'inquiries' => 'Inquiries',
         'contact' => 'Contact Us',
+    ],
+
+    // Sidebar
+    'sidebar' => [
+        'dashboard' => 'Go to Dashboard',
+        'WhatsApp' => 'Go to WhatsApp'
     ],
 
     // Home Page
@@ -224,8 +230,8 @@ return [
             ],
 
             'accordion_1' => [
-                'q' => 'What is Ikhwa Network?',
-                'a' => 'Ikhwa Network is an active company in the real estate sector in the city of Meknes, founded in 2023 by Moroccan businessmen.'
+                'q' => 'What is IKHWA NETWORK?',
+                'a' => 'IKHWA NETWORK is a company active in the field of real estate investment and development in the Ismaili capital, Meknes, and was established in 2023.'
             ],
 
             'accordion_2' => [
@@ -234,13 +240,13 @@ return [
             ],
 
             'accordion_4' => [
-                'q' => 'Where is Ikhwa Network located?',
-                'a' => 'Ikhwa Network is based in the city of Meknes. Its headquarters are located at Villa No. 194, Riyad Toulal No. 1.'
+                'q' => 'Where is IKHWA NETWORK located?',
+                'a' => 'IKHWA NETWORK is based in the city of Meknes. Its headquarters are located at Villa No. 194, Riyad Toulal No. 1.'
             ],
 
             'accordion_3' => [
-                'q' => 'Who legally represents Ikhwa Network?',
-                'a' => 'The legal representative of Ikhwa Network is Mr. Mohamed Saad El Raji, appointed by the Board of Directors.'
+                'q' => 'Who legally represents IKHWA NETWORK?',
+                'a' => 'The legal representative of IKHWA NETWORK is Mr. Mohamed Saad El Raji, appointed by the Board of Directors.'
             ],
         ],
 
@@ -262,7 +268,19 @@ return [
                 'inquiry' => 'Inquiry',
                 'complaint' => 'Complaint',
                 'suggestion' => 'Suggestion',
-                'submit' => 'Submit'
+                'submit' => 'Submit',
+                'workingHours' => '
+                    <strong>Working Hours:</strong>
+                    <br>
+                        Monday to Friday: 8:00 AM to 5:00 PM
+                    <br>
+                        Saturday: 8:00 AM to 1:00 PM
+                    <br>
+                    <br>
+                    <strong>Customer Service:</strong>
+                    24/7
+                ',
+                'fileHint' => 'Please attach a file that does not exceed 5 MB in size and is of the following types: .jpg, .jpeg, .png, .pdf, .xlsx, .docx'
             ]
         ]
 
@@ -279,7 +297,7 @@ return [
         'form' => [
             'head' => [
                 'title' => 'Join the Team',
-                'content' => 'If you are looking for a company that values teamwork, initiative, and innovation, it is clear that you belong to Ikhwa Network.'
+                'content' => 'If you are looking for a company that values teamwork, initiative, and innovation, it is clear that you belong to IKHWA NETWORK.'
             ],
             'input' => [
                 'name' => 'Enter your name',
@@ -489,7 +507,7 @@ return [
                             <br>
                             11-6 You must ensure that the website from which you are linking complies with the content standards outlined in Section 13 below in all respects.
                             <br>
-                            11-7 If you wish to use any content from our website other than as stated above, please contact us at the email address contact@ikhwanetwork.ma
+                            11-7 If you wish to use any content from our website other than as stated above, please contact us at the email address <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>
                         </p>
                     </li>
 
@@ -537,7 +555,7 @@ return [
                             <br>
                                 14-2 We have the right to disable any identification code or password at any time, whether chosen by you or assigned to you, if we believe that you have failed to comply with any of the provisions of these terms of use.
                             <br>
-                            14-3 If you become aware or suspect that someone else has gained knowledge of your identification code or password, you are required to notify us immediately at the email address contact@ikhwanetwork.ma.
+                            14-3 If you become aware or suspect that someone else has gained knowledge of your identification code or password, you are required to notify us immediately at the email address <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                         </p>
                     </li>
 
@@ -565,7 +583,7 @@ return [
                     <li>
                         Contact Us
                         <p>
-                            To contact us, please email us at: contact@ikhwanetwork.ma.
+                            To contact us, please email us at: <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                         </p>
                     </li>
                 </ol>
@@ -700,7 +718,7 @@ return [
                             3.7 How does the company protect your personal data?
 
                             <br>
-                            The nature of the protective measures varies depending on the sensitivity, scope, and method of storage of personal data. The most sensitive types of personal information are surrounded by higher levels of protection, such as encryption. If you would like more information about the protective measures we apply, please contact us via email at contact@ikhwanetwork.com.
+                            The nature of the protective measures varies depending on the sensitivity, scope, and method of storage of personal data. The most sensitive types of personal information are surrounded by higher levels of protection, such as encryption. If you would like more information about the protective measures we apply, please contact us via email at <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                         </p>
                         <p>
                             3.8 What is the retention period for your personal data by the company?
@@ -746,14 +764,14 @@ return [
                             </li>
                         </ul>
                         <p>
-                            You can exercise any of the above rights by sending a request to the email: contact@ikhwanetwork.com.
+                            You can exercise any of the above rights by sending a request to the email: <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a>.
                             <br>
                             In certain circumstances, the company may not be able to provide access to all of the personal data it holds, for example, when disclosure would reveal business secrets, or when the information is subject to confidentiality between the customer and lawyer, or if the information was collected during an investigation into a contractual breach or legal violation.
                         </p>
                         <p>
                            3.10 How can I object to compliance and submit suggestions?
                             <br>
-                                You can direct any questions or inquiries to the email address contact@ikhwanetwork.com regarding the privacy principles mentioned above or about the privacy practices applied by the company as outlined in the privacy policy.
+                                You can direct any questions or inquiries to the email address <a href="mailto:contact@ikhwanetwork.com">contact@ikhwanetwork.com</a> regarding the privacy principles mentioned above or about the privacy practices applied by the company as outlined in the privacy policy.
                             <br>
                                 The company will investigate all complaints and respond to any questions you may have. If it is determined that the complaint is valid, the company will take appropriate action to resolve it, which may include modifying its policies and procedures.
                         </p>
@@ -786,7 +804,7 @@ return [
         'contact' => 'Contact Us',
         'termsAndConditions' => 'Terms and Conditions',
         'privacyPolicy' => 'Privacy Policy',
-        'copy_right' => 'All rights reserved by Ikhwa Network 2024'
+        'copy_right' => 'All rights reserved by IKHWA NETWORK 2024'
     ],
 
 ];
